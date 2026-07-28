@@ -251,8 +251,19 @@ def eval_game(g: dict, venue: str, frac: float) -> dict:
     D = convolve(mu_home, mu_away, LG["nb_dispersion"])
     conf = min(hp.confidence(), ap.confidence())
 
-    M = g["markets"]
+    M = g.get("markets")
     rows = []
+    if not M:
+        rpg0 = mu_home + mu_away
+        return {
+            "time": g["time"], "code": g["code"], "unpriced": True,
+            "away": {"name": away.name, "rec": f"{away.wins}-{away.losses}", "mu": mu_away,
+                     "sp": ap.name, "ip": ap.ip},
+            "home": {"name": home.name, "rec": f"{home.wins}-{home.losses}", "mu": mu_home,
+                     "sp": hp.name, "ip": hp.ip},
+            "home_win": D.home_win, "pythag_exp": round(rpg0 ** 0.287, 3),
+            "confidence": conf, "rows": [],
+        }
 
     # Moneyline
     mh, ma = devig_power(american_to_imp(M["ml"]["home"]), american_to_imp(M["ml"]["away"]))
@@ -297,10 +308,12 @@ def eval_game(g: dict, venue: str, frac: float) -> dict:
     for r in rows:
         e = evaluate(r["p"], r["mkt"], r["price"], venue)
         damped = dampen(e["gross"], conf)
+        suspect = abs(e["gross"]) > 0.10   # >10pp disagreement with a liquid market
         out.append({**r, **e,
                     "damped": damped,
-                    "stars": stars(e["gross"], conf),
-                    "stake": kelly(r["mkt"] + damped, e["b"], frac)})
+                    "suspect": suspect,
+                    "stars": 1 if suspect else stars(e["gross"], conf),
+                    "stake": 0.0 if suspect else kelly(r["mkt"] + damped, e["b"], frac)})
 
     rpg = mu_home + mu_away
     return {
@@ -311,7 +324,7 @@ def eval_game(g: dict, venue: str, frac: float) -> dict:
                  "sp": hp.name, "ip": hp.ip},
         "home_win": D.home_win,
         "pythag_exp": round(rpg ** 0.287, 3),
-        "confidence": conf,
+        "confidence": conf, "unpriced": False,
         "rows": out,
     }
 

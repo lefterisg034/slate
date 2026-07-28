@@ -71,9 +71,15 @@ def bar_html(r):
 
 def row_html(r):
     good = r["ev"] >= 0
-    col = "var(--pos)" if good else "var(--neg)"
-    flag = '' if good else '<span class="fl pass">pass</span>'
-    book = f'<span class="bk">{r["book"]}</span>' if r["book"] else ''
+    suspect = r.get("suspect")
+    col = "var(--warn)" if suspect else ("var(--pos)" if good else "var(--neg)")
+    if suspect:
+        flag = '<span class="fl">implausible \u2014 check line</span>'
+    elif not good:
+        flag = '<span class="fl pass">pass</span>'
+    else:
+        flag = ''
+    book = f'<span class="bk">{r["book"]}</span>' if r["book"] else '<span class="bk">no book</span>'
     stake = f'{r["stake"]*100:.2f}%' if r["stake"] > 0 else '\u2014'
     return f"""<div class="m">
   <span class="mn">{r['label']}</span>
@@ -87,6 +93,8 @@ def row_html(r):
 def card_html(g):
     thin = min(g["away"]["ip"], g["home"]["ip"]) < 40
     flag = '<span class="fl">thin starter</span>' if thin else ''
+    if g.get("unpriced"):
+        flag += '<span class="fl">no odds \u2014 projection only</span>'
     return f"""<div class="card">
   <div class="head"><span class="t">{g['time']}</span><span class="c">{g['code']}</span>{flag}</div>
   <div class="body">

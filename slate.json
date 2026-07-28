@@ -1,0 +1,1095 @@
+{
+  "date": "2026-07-28",
+  "source": "statsapi.mlb.com + the-odds-api.com",
+  "has_odds": false,
+  "games": [
+    {
+      "time": "TUE 07/28 1:40 PM",
+      "code": "CLE @ CIN",
+      "away": {
+        "team": {
+          "name": "Cleveland",
+          "abbr": "CLE",
+          "wins": 54,
+          "losses": 53,
+          "games": 107,
+          "runs_scored": 420.0,
+          "runs_allowed": 438.0,
+          "bullpen_ip": 398.4,
+          "bullpen_er": 161.0,
+          "park_factor": 0.98
+        },
+        "starter": {
+          "name": "Slade Cecconi",
+          "ip": 103.7,
+          "hr": 15,
+          "bb": 34,
+          "hbp": 3,
+          "so": 82
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Cincinnati",
+          "abbr": "CIN",
+          "wins": 49,
+          "losses": 55,
+          "games": 104,
+          "runs_scored": 432.0,
+          "runs_allowed": 498.0,
+          "bullpen_ip": 388.5,
+          "bullpen_er": 189.3,
+          "park_factor": 1.07
+        },
+        "starter": {
+          "name": "Chase Burns",
+          "ip": 107.7,
+          "hr": 12,
+          "bb": 39,
+          "hbp": 0,
+          "so": 124
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    },
+    {
+      "time": "TUE 07/28 7:10 PM",
+      "code": "CLE @ CIN",
+      "away": {
+        "team": {
+          "name": "Cleveland",
+          "abbr": "CLE",
+          "wins": 54,
+          "losses": 53,
+          "games": 107,
+          "runs_scored": 420.0,
+          "runs_allowed": 438.0,
+          "bullpen_ip": 398.4,
+          "bullpen_er": 161.0,
+          "park_factor": 0.98
+        },
+        "starter": {
+          "name": "Gavin Williams",
+          "ip": 126.3,
+          "hr": 20,
+          "bb": 37,
+          "hbp": 3,
+          "so": 156
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Cincinnati",
+          "abbr": "CIN",
+          "wins": 49,
+          "losses": 55,
+          "games": 104,
+          "runs_scored": 432.0,
+          "runs_allowed": 498.0,
+          "bullpen_ip": 388.5,
+          "bullpen_er": 189.3,
+          "park_factor": 1.07
+        },
+        "starter": {
+          "name": "TBD",
+          "ip": 0.0,
+          "hr": 0,
+          "bb": 0,
+          "hbp": 0,
+          "so": 0
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    },
+    {
+      "time": "TUE 07/28 6:40 PM",
+      "code": "BAL @ DET",
+      "away": {
+        "team": {
+          "name": "Baltimore",
+          "abbr": "BAL",
+          "wins": 52,
+          "losses": 55,
+          "games": 107,
+          "runs_scored": 491.0,
+          "runs_allowed": 502.0,
+          "bullpen_ip": 400.5,
+          "bullpen_er": 177.9,
+          "park_factor": 1.02
+        },
+        "starter": {
+          "name": "Dean Kremer",
+          "ip": 32.0,
+          "hr": 10,
+          "bb": 8,
+          "hbp": 0,
+          "so": 34
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Detroit",
+          "abbr": "DET",
+          "wins": 50,
+          "losses": 57,
+          "games": 107,
+          "runs_scored": 450.0,
+          "runs_allowed": 425.0,
+          "bullpen_ip": 396.8,
+          "bullpen_er": 155.2,
+          "park_factor": 0.99
+        },
+        "starter": {
+          "name": "Troy Melton",
+          "ip": 60.0,
+          "hr": 8,
+          "bb": 19,
+          "hbp": 2,
+          "so": 55
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    },
+    {
+      "time": "TUE 07/28 6:40 PM",
+      "code": "ARI @ PIT",
+      "away": {
+        "team": {
+          "name": "Arizona",
+          "abbr": "ARI",
+          "wins": 55,
+          "losses": 52,
+          "games": 107,
+          "runs_scored": 481.0,
+          "runs_allowed": 485.0,
+          "bullpen_ip": 397.3,
+          "bullpen_er": 181.1,
+          "park_factor": 1.04
+        },
+        "starter": {
+          "name": "Brandon Pfaadt",
+          "ip": 65.0,
+          "hr": 8,
+          "bb": 20,
+          "hbp": 4,
+          "so": 45
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Pittsburgh",
+          "abbr": "PIT",
+          "wins": 55,
+          "losses": 52,
+          "games": 107,
+          "runs_scored": 556.0,
+          "runs_allowed": 515.0,
+          "bullpen_ip": 401.9,
+          "bullpen_er": 186.3,
+          "park_factor": 0.97
+        },
+        "starter": {
+          "name": "Bubba Chandler",
+          "ip": 100.7,
+          "hr": 10,
+          "bb": 56,
+          "hbp": 5,
+          "so": 90
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    },
+    {
+      "time": "TUE 07/28 6:40 PM",
+      "code": "TEX @ TBR",
+      "away": {
+        "team": {
+          "name": "Texas",
+          "abbr": "TEX",
+          "wins": 54,
+          "losses": 52,
+          "games": 106,
+          "runs_scored": 450.0,
+          "runs_allowed": 471.0,
+          "bullpen_ip": 391.2,
+          "bullpen_er": 180.9,
+          "park_factor": 1.02
+        },
+        "starter": {
+          "name": "TBD",
+          "ip": 0.0,
+          "hr": 0,
+          "bb": 0,
+          "hbp": 0,
+          "so": 0
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Tampa Bay",
+          "abbr": "TBR",
+          "wins": 62,
+          "losses": 43,
+          "games": 105,
+          "runs_scored": 474.0,
+          "runs_allowed": 432.0,
+          "bullpen_ip": 391.9,
+          "bullpen_er": 158.4,
+          "park_factor": 0.97
+        },
+        "starter": {
+          "name": "Griffin Jax",
+          "ip": 81.0,
+          "hr": 13,
+          "bb": 27,
+          "hbp": 2,
+          "so": 82
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    },
+    {
+      "time": "TUE 07/28 6:40 PM",
+      "code": "PHI @ MIA",
+      "away": {
+        "team": {
+          "name": "Philadelphia",
+          "abbr": "PHI",
+          "wins": 57,
+          "losses": 50,
+          "games": 107,
+          "runs_scored": 467.0,
+          "runs_allowed": 479.0,
+          "bullpen_ip": 398.4,
+          "bullpen_er": 182.5,
+          "park_factor": 1.01
+        },
+        "starter": {
+          "name": "Aaron Nola",
+          "ip": 108.3,
+          "hr": 25,
+          "bb": 36,
+          "hbp": 1,
+          "so": 112
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Miami",
+          "abbr": "MIA",
+          "wins": 53,
+          "losses": 54,
+          "games": 107,
+          "runs_scored": 472.0,
+          "runs_allowed": 469.0,
+          "bullpen_ip": 394.8,
+          "bullpen_er": 174.9,
+          "park_factor": 0.96
+        },
+        "starter": {
+          "name": "Sandy Alcantara",
+          "ip": 143.7,
+          "hr": 17,
+          "bb": 38,
+          "hbp": 7,
+          "so": 110
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    },
+    {
+      "time": "TUE 07/28 6:45 PM",
+      "code": "TOR @ WSN",
+      "away": {
+        "team": {
+          "name": "Toronto",
+          "abbr": "TOR",
+          "wins": 49,
+          "losses": 58,
+          "games": 107,
+          "runs_scored": 419.0,
+          "runs_allowed": 480.0,
+          "bullpen_ip": 397.6,
+          "bullpen_er": 177.4,
+          "park_factor": 1.01
+        },
+        "starter": {
+          "name": "Shane Bieber",
+          "ip": 30.7,
+          "hr": 7,
+          "bb": 12,
+          "hbp": 0,
+          "so": 22
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Washington",
+          "abbr": "WSN",
+          "wins": 54,
+          "losses": 53,
+          "games": 107,
+          "runs_scored": 586.0,
+          "runs_allowed": 557.0,
+          "bullpen_ip": 402.6,
+          "bullpen_er": 206.6,
+          "park_factor": 1.01
+        },
+        "starter": {
+          "name": "Cade Cavalli",
+          "ip": 110.7,
+          "hr": 9,
+          "bb": 34,
+          "hbp": 12,
+          "so": 127
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    },
+    {
+      "time": "TUE 07/28 7:10 PM",
+      "code": "ATL @ NYM",
+      "away": {
+        "team": {
+          "name": "Atlanta",
+          "abbr": "ATL",
+          "wins": 62,
+          "losses": 44,
+          "games": 106,
+          "runs_scored": 523.0,
+          "runs_allowed": 427.0,
+          "bullpen_ip": 395.8,
+          "bullpen_er": 159.5,
+          "park_factor": 1.0
+        },
+        "starter": {
+          "name": "Chris Sale",
+          "ip": 111.0,
+          "hr": 8,
+          "bb": 26,
+          "hbp": 10,
+          "so": 134
+        }
+      },
+      "home": {
+        "team": {
+          "name": "New York",
+          "abbr": "NYM",
+          "wins": 45,
+          "losses": 62,
+          "games": 107,
+          "runs_scored": 446.0,
+          "runs_allowed": 497.0,
+          "bullpen_ip": 400.1,
+          "bullpen_er": 180.3,
+          "park_factor": 0.98
+        },
+        "starter": {
+          "name": "Christian Scott",
+          "ip": 63.3,
+          "hr": 7,
+          "bb": 29,
+          "hbp": 5,
+          "so": 78
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    },
+    {
+      "time": "TUE 07/28 7:40 PM",
+      "code": "KCR @ MIN",
+      "away": {
+        "team": {
+          "name": "Kansas City",
+          "abbr": "KCR",
+          "wins": 45,
+          "losses": 62,
+          "games": 107,
+          "runs_scored": 450.0,
+          "runs_allowed": 546.0,
+          "bullpen_ip": 395.5,
+          "bullpen_er": 206.7,
+          "park_factor": 1.01
+        },
+        "starter": {
+          "name": "Seth Lugo",
+          "ip": 117.7,
+          "hr": 15,
+          "bb": 38,
+          "hbp": 5,
+          "so": 94
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Minnesota",
+          "abbr": "MIN",
+          "wins": 53,
+          "losses": 54,
+          "games": 107,
+          "runs_scored": 511.0,
+          "runs_allowed": 538.0,
+          "bullpen_ip": 397.0,
+          "bullpen_er": 199.8,
+          "park_factor": 1.0
+        },
+        "starter": {
+          "name": "Taj Bradley",
+          "ip": 114.7,
+          "hr": 17,
+          "bb": 46,
+          "hbp": 2,
+          "so": 129
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    },
+    {
+      "time": "TUE 07/28 7:40 PM",
+      "code": "NYY @ CHW",
+      "away": {
+        "team": {
+          "name": "New York",
+          "abbr": "NYY",
+          "wins": 60,
+          "losses": 46,
+          "games": 106,
+          "runs_scored": 497.0,
+          "runs_allowed": 409.0,
+          "bullpen_ip": 395.5,
+          "bullpen_er": 145.4,
+          "park_factor": 1.03
+        },
+        "starter": {
+          "name": "Gerrit Cole",
+          "ip": 62.0,
+          "hr": 11,
+          "bb": 12,
+          "hbp": 1,
+          "so": 66
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Chicago",
+          "abbr": "CHW",
+          "wins": 55,
+          "losses": 50,
+          "games": 105,
+          "runs_scored": 506.0,
+          "runs_allowed": 464.0,
+          "bullpen_ip": 390.6,
+          "bullpen_er": 174.7,
+          "park_factor": 1.02
+        },
+        "starter": {
+          "name": "Anthony Kay",
+          "ip": 98.3,
+          "hr": 14,
+          "bb": 40,
+          "hbp": 19,
+          "so": 80
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    },
+    {
+      "time": "TUE 07/28 7:45 PM",
+      "code": "CHC @ STL",
+      "away": {
+        "team": {
+          "name": "Chicago",
+          "abbr": "CHC",
+          "wins": 60,
+          "losses": 46,
+          "games": 106,
+          "runs_scored": 548.0,
+          "runs_allowed": 468.0,
+          "bullpen_ip": 396.6,
+          "bullpen_er": 180.4,
+          "park_factor": 1.03
+        },
+        "starter": {
+          "name": "Colin Rea",
+          "ip": 105.7,
+          "hr": 17,
+          "bb": 38,
+          "hbp": 7,
+          "so": 81
+        }
+      },
+      "home": {
+        "team": {
+          "name": "St. Louis",
+          "abbr": "STL",
+          "wins": 53,
+          "losses": 53,
+          "games": 106,
+          "runs_scored": 469.0,
+          "runs_allowed": 474.0,
+          "bullpen_ip": 397.5,
+          "bullpen_er": 178.2,
+          "park_factor": 0.99
+        },
+        "starter": {
+          "name": "TBD",
+          "ip": 0.0,
+          "hr": 0,
+          "bb": 0,
+          "hbp": 0,
+          "so": 0
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    },
+    {
+      "time": "TUE 07/28 9:38 PM",
+      "code": "HOU @ LAA",
+      "away": {
+        "team": {
+          "name": "Houston",
+          "abbr": "HOU",
+          "wins": 53,
+          "losses": 55,
+          "games": 108,
+          "runs_scored": 495.0,
+          "runs_allowed": 540.0,
+          "bullpen_ip": 401.7,
+          "bullpen_er": 204.3,
+          "park_factor": 0.99
+        },
+        "starter": {
+          "name": "Peter Lambert",
+          "ip": 98.0,
+          "hr": 11,
+          "bb": 38,
+          "hbp": 7,
+          "so": 94
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Los Angeles",
+          "abbr": "LAA",
+          "wins": 42,
+          "losses": 65,
+          "games": 107,
+          "runs_scored": 458.0,
+          "runs_allowed": 525.0,
+          "bullpen_ip": 395.8,
+          "bullpen_er": 194.1,
+          "park_factor": 1.01
+        },
+        "starter": {
+          "name": "Reid Detmers",
+          "ip": 120.0,
+          "hr": 13,
+          "bb": 37,
+          "hbp": 4,
+          "so": 136
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    },
+    {
+      "time": "TUE 07/28 9:40 PM",
+      "code": "BOS @ ATH",
+      "away": {
+        "team": {
+          "name": "Boston",
+          "abbr": "BOS",
+          "wins": 55,
+          "losses": 50,
+          "games": 105,
+          "runs_scored": 442.0,
+          "runs_allowed": 394.0,
+          "bullpen_ip": 391.2,
+          "bullpen_er": 149.7,
+          "park_factor": 1.05
+        },
+        "starter": {
+          "name": "Jake Bennett",
+          "ip": 59.3,
+          "hr": 4,
+          "bb": 9,
+          "hbp": 2,
+          "so": 42
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Athletics",
+          "abbr": "ATH",
+          "wins": 44,
+          "losses": 62,
+          "games": 106,
+          "runs_scored": 470.0,
+          "runs_allowed": 597.0,
+          "bullpen_ip": 394.9,
+          "bullpen_er": 227.3,
+          "park_factor": 1.06
+        },
+        "starter": {
+          "name": "Gage Jump",
+          "ip": 57.0,
+          "hr": 7,
+          "bb": 21,
+          "hbp": 3,
+          "so": 61
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    },
+    {
+      "time": "TUE 07/28 9:40 PM",
+      "code": "COL @ SDP",
+      "away": {
+        "team": {
+          "name": "Colorado",
+          "abbr": "COL",
+          "wins": 42,
+          "losses": 65,
+          "games": 107,
+          "runs_scored": 507.0,
+          "runs_allowed": 617.0,
+          "bullpen_ip": 394.5,
+          "bullpen_er": 236.0,
+          "park_factor": 1.18
+        },
+        "starter": {
+          "name": "Michael Lorenzen",
+          "ip": 100.7,
+          "hr": 16,
+          "bb": 39,
+          "hbp": 5,
+          "so": 78
+        }
+      },
+      "home": {
+        "team": {
+          "name": "San Diego",
+          "abbr": "SDP",
+          "wins": 53,
+          "losses": 53,
+          "games": 106,
+          "runs_scored": 442.0,
+          "runs_allowed": 463.0,
+          "bullpen_ip": 392.7,
+          "bullpen_er": 177.3,
+          "park_factor": 0.95
+        },
+        "starter": {
+          "name": "Michael King",
+          "ip": 119.3,
+          "hr": 11,
+          "bb": 49,
+          "hbp": 9,
+          "so": 103
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    },
+    {
+      "time": "TUE 07/28 9:45 PM",
+      "code": "MIL @ SFG",
+      "away": {
+        "team": {
+          "name": "Milwaukee",
+          "abbr": "MIL",
+          "wins": 66,
+          "losses": 40,
+          "games": 106,
+          "runs_scored": 535.0,
+          "runs_allowed": 396.0,
+          "bullpen_ip": 398.4,
+          "bullpen_er": 146.9,
+          "park_factor": 1.0
+        },
+        "starter": {
+          "name": "Logan Henderson",
+          "ip": 38.3,
+          "hr": 5,
+          "bb": 7,
+          "hbp": 1,
+          "so": 47
+        }
+      },
+      "home": {
+        "team": {
+          "name": "San Francisco",
+          "abbr": "SFG",
+          "wins": 45,
+          "losses": 61,
+          "games": 106,
+          "runs_scored": 439.0,
+          "runs_allowed": 493.0,
+          "bullpen_ip": 392.6,
+          "bullpen_er": 183.6,
+          "park_factor": 0.94
+        },
+        "starter": {
+          "name": "Landen Roupp",
+          "ip": 110.0,
+          "hr": 8,
+          "bb": 45,
+          "hbp": 3,
+          "so": 113
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    },
+    {
+      "time": "TUE 07/28 10:10 PM",
+      "code": "SEA @ LAD",
+      "away": {
+        "team": {
+          "name": "Seattle",
+          "abbr": "SEA",
+          "wins": 52,
+          "losses": 55,
+          "games": 107,
+          "runs_scored": 429.0,
+          "runs_allowed": 421.0,
+          "bullpen_ip": 397.0,
+          "bullpen_er": 157.5,
+          "park_factor": 0.94
+        },
+        "starter": {
+          "name": "Luis Castillo",
+          "ip": 94.7,
+          "hr": 14,
+          "bb": 30,
+          "hbp": 5,
+          "so": 84
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Los Angeles",
+          "abbr": "LAD",
+          "wins": 67,
+          "losses": 39,
+          "games": 106,
+          "runs_scored": 546.0,
+          "runs_allowed": 391.0,
+          "bullpen_ip": 393.3,
+          "bullpen_er": 151.7,
+          "park_factor": 1.0
+        },
+        "starter": {
+          "name": "TBD",
+          "ip": 0.0,
+          "hr": 0,
+          "bb": 0,
+          "hbp": 0,
+          "so": 0
+        }
+      },
+      "markets": {
+        "ml": {
+          "home": -110,
+          "away": -110,
+          "book": ""
+        },
+        "rl": {
+          "line": 1.5,
+          "home_fav": true,
+          "fav": -120,
+          "dog": 100,
+          "book": ""
+        },
+        "tot": {
+          "line": 8.5,
+          "over": -110,
+          "under": -110,
+          "book": ""
+        }
+      }
+    }
+  ]
+}

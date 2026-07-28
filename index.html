@@ -1,0 +1,594 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Slate — 2026-07-28</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ground:#12161E;--panel:#1A1F29;--panel2:#212734;--rule:#2B3240;--rule2:#242A35;
+--bone:#EAE7DE;--dim:#98A0AD;--faint:#69707E;--pos:#4FB79A;--posdeep:#1D5748;
+--neg:#C9705A;--negdeep:#632E22;--warn:#D8A548;--warndeep:#46330F;--focus:#7FA8D9}
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+body{background:var(--ground);color:var(--bone);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:30px 20px 70px}
+.mast{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:16px}
+h1{font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:700;font-size:29px;letter-spacing:-.01em;margin:0;line-height:1}
+h1 span{color:var(--faint);font-weight:400}
+.meta{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--dim);text-align:right;line-height:1.75}
+.notice{margin:18px 0 24px;border:1px solid var(--warndeep);background:rgba(216,165,72,.06);border-radius:6px;padding:13px 15px;font-size:13.5px;color:var(--dim);display:flex;gap:11px}
+.notice b{color:var(--warn);font-weight:500}
+.notice i{font-style:normal;font-family:"IBM Plex Mono",monospace;color:var(--warn);flex:none}
+.card{background:var(--panel);border:1px solid var(--rule);border-radius:8px;margin-top:16px;overflow:hidden}
+.head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid var(--rule2);background:var(--panel2)}
+.t{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--dim)}
+.c{font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:600;font-size:13px;letter-spacing:.11em;color:var(--faint)}
+.body{display:grid;grid-template-columns:minmax(0,246px) minmax(0,1fr)}
+@media(max-width:820px){.body{grid-template-columns:1fr}}
+.proj{padding:15px 16px;border-right:1px solid var(--rule2)}
+@media(max-width:820px){.proj{border-right:none;border-bottom:1px solid var(--rule2)}}
+.lbl{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--faint);margin-bottom:9px}
+.tr{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:6px 0}
+.tr+.tr{border-top:1px solid var(--rule2)}
+.tn{font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:600;font-size:16px}
+.tn u{text-decoration:none;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--faint);font-weight:400;margin-left:6px}
+.tv{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:24px;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.sp{margin-top:10px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--faint);line-height:1.75}
+.mkts{display:flex;flex-direction:column}
+.m{display:grid;grid-template-columns:66px minmax(0,1fr) 88px 74px 96px;gap:12px;align-items:center;padding:11px 16px}
+.m+.m{border-top:1px solid var(--rule2)}
+@media(max-width:820px){.m{grid-template-columns:64px minmax(0,1fr) 80px;row-gap:7px}.m .pr{grid-column:2/4;text-align:left}.m .st{display:none}}
+.mn{font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:600;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--dim)}
+.pk{font-family:"IBM Plex Mono",monospace;font-size:13px;margin-bottom:6px}
+.pk em{font-style:normal;color:var(--faint)}
+.bar{position:relative;height:8px;background:var(--panel2);border-radius:2px;overflow:hidden}
+.bg{position:absolute;left:0;top:0;bottom:0;border-radius:2px}
+.bf{position:absolute;top:0;bottom:0;background-image:repeating-linear-gradient(115deg,rgba(234,231,222,.3) 0 2px,transparent 2px 5px)}
+.sc{display:flex;justify-content:space-between;font-family:"IBM Plex Mono",monospace;font-size:9.5px;color:var(--faint);margin-top:4px}
+.ev{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:18px;text-align:right;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.ev u{display:block;text-decoration:none;font-size:9.5px;font-weight:400;letter-spacing:.07em;text-transform:uppercase;color:var(--faint)}
+.st{text-align:center;font-size:11px;letter-spacing:.09em;color:var(--warn);font-family:"IBM Plex Mono",monospace}
+.st u{display:block;text-decoration:none;font-size:9.5px;color:var(--faint);letter-spacing:.07em;text-transform:uppercase;margin-top:1px}
+.pr{text-align:right;font-family:"IBM Plex Mono",monospace;font-size:13px;font-variant-numeric:tabular-nums}
+.pr u{display:block;text-decoration:none;font-size:9.5px;color:var(--faint);letter-spacing:.07em;text-transform:uppercase}
+.bk{display:inline-block;font-size:9.5px;letter-spacing:.06em;background:var(--panel2);border:1px solid var(--rule);color:var(--dim);padding:1px 5px;border-radius:3px;margin-left:5px}
+.fl{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;margin-left:6px;background:var(--warndeep);color:var(--warn)}
+.pass{background:#282E38;color:var(--faint)}
+footer{margin-top:38px;padding-top:18px;border-top:1px solid var(--rule);font-size:13px;color:var(--faint);line-height:1.8}
+footer code{font-family:"IBM Plex Mono",monospace;color:var(--dim);background:var(--panel2);padding:1px 5px;border-radius:3px;font-size:12px}
+</style></head><body><div class="wrap">
+<header class="mast"><h1>Slate <span>/ mlb</span></h1>
+<div class="meta">2026-07-28 · 16 games · 37 positive-ev plays<br>best +49.5% · updated 16:16 UTC</div></header>
+<div class="notice"><i>!</i><div><b>Placeholder inputs &mdash; not validated.</b> Stat lines are synthetic.</div></div>
+<div class="card">
+  <div class="head"><span class="t">TUE 07/28 1:40 PM</span><span class="c">CLE @ CIN</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">Cleveland<u>54-53</u></span>
+        <span class="tv">4.2</span></div>
+      <div class="tr"><span class="tn">Cincinnati<u>49-55</u></span>
+        <span class="tv">4.6</span></div>
+      <div class="sp">Chase Burns (108 ip)<br>
+        Slade Cecconi (104 ip)<br>
+        home win 54.1% · pythag exp 1.868</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">Cincinnati ML</div><div class="bar"><span class="bg" style="width:27.3%;background:var(--posdeep)"></span><span class="bg" style="width:11.4%;background:var(--pos)"></span><span class="bf" style="left:11.4%;width:15.9%"></span></div><div class="sc"><span>model 54.1% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+3.3%<u>net ev</u></div>
+  <div class="st">★★★☆☆<u>rating</u></div>
+  <div class="pr">-110<u>0.90% stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">Cleveland +1½</div><div class="bar"><span class="bg" style="width:92.2%;background:var(--posdeep)"></span><span class="bg" style="width:76.7%;background:var(--pos)"></span><span class="bf" style="left:76.7%;width:15.5%"></span></div><div class="sc"><span>model 61.5% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+23.0%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">+100<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">u8.5<span class="fl pass">pass</span></div><div class="bar"><span class="bg" style="width:12.3%;background:var(--negdeep)"></span><span class="bg" style="width:0.0%;background:var(--neg)"></span><span class="bf" style="left:0.0%;width:12.3%"></span></div><div class="sc"><span>model 51.8% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--neg)">-1.0%<u>net ev</u></div>
+  <div class="st">★★☆☆☆<u>rating</u></div>
+  <div class="pr">-110<u>— stake</u></div>
+</div></div>
+  </div>
+</div><div class="card">
+  <div class="head"><span class="t">TUE 07/28 7:10 PM</span><span class="c">CLE @ CIN</span><span class="fl">thin starter</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">Cleveland<u>54-53</u></span>
+        <span class="tv">4.5</span></div>
+      <div class="tr"><span class="tn">Cincinnati<u>49-55</u></span>
+        <span class="tv">4.3</span></div>
+      <div class="sp">TBD (0 ip)<br>
+        Gavin Williams (126 ip)<br>
+        home win 48.6% · pythag exp 1.864</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">Cleveland ML<span class="fl pass">pass</span></div><div class="bar"><span class="bg" style="width:9.3%;background:var(--negdeep)"></span><span class="bg" style="width:0.0%;background:var(--neg)"></span><span class="bf" style="left:0.0%;width:9.3%"></span></div><div class="sc"><span>model 51.4% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--neg)">-1.9%<u>net ev</u></div>
+  <div class="st">★☆☆☆☆<u>rating</u></div>
+  <div class="pr">-110<u>— stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">Cleveland +1½</div><div class="bar"><span class="bg" style="width:100.0%;background:var(--posdeep)"></span><span class="bg" style="width:84.5%;background:var(--pos)"></span><span class="bf" style="left:84.5%;width:15.5%"></span></div><div class="sc"><span>model 66.8% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+33.6%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">+100<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">u8.5</div><div class="bar"><span class="bg" style="width:16.5%;background:var(--posdeep)"></span><span class="bg" style="width:0.7%;background:var(--pos)"></span><span class="bf" style="left:0.7%;width:15.9%"></span></div><div class="sc"><span>model 52.5% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+0.2%<u>net ev</u></div>
+  <div class="st">★☆☆☆☆<u>rating</u></div>
+  <div class="pr">-110<u>— stake</u></div>
+</div></div>
+  </div>
+</div><div class="card">
+  <div class="head"><span class="t">TUE 07/28 6:40 PM</span><span class="c">BAL @ DET</span><span class="fl">thin starter</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">Baltimore<u>52-55</u></span>
+        <span class="tv">4.3</span></div>
+      <div class="tr"><span class="tn">Detroit<u>50-57</u></span>
+        <span class="tv">4.6</span></div>
+      <div class="sp">Troy Melton (60 ip)<br>
+        Dean Kremer (32 ip)<br>
+        home win 53.2% · pythag exp 1.874</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">Detroit ML</div><div class="bar"><span class="bg" style="width:21.0%;background:var(--posdeep)"></span><span class="bg" style="width:5.2%;background:var(--pos)"></span><span class="bf" style="left:5.2%;width:15.9%"></span></div><div class="sc"><span>model 53.2% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+1.5%<u>net ev</u></div>
+  <div class="st">★★☆☆☆<u>rating</u></div>
+  <div class="pr">-110<u>— stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">Baltimore +1½</div><div class="bar"><span class="bg" style="width:97.5%;background:var(--posdeep)"></span><span class="bg" style="width:82.0%;background:var(--pos)"></span><span class="bf" style="left:82.0%;width:15.5%"></span></div><div class="sc"><span>model 62.3% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+24.6%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">+100<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">u8.5<span class="fl pass">pass</span></div><div class="bar"><span class="bg" style="width:6.7%;background:var(--negdeep)"></span><span class="bg" style="width:0.0%;background:var(--neg)"></span><span class="bf" style="left:0.0%;width:6.7%"></span></div><div class="sc"><span>model 51.0% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--neg)">-2.6%<u>net ev</u></div>
+  <div class="st">★☆☆☆☆<u>rating</u></div>
+  <div class="pr">-110<u>— stake</u></div>
+</div></div>
+  </div>
+</div><div class="card">
+  <div class="head"><span class="t">TUE 07/28 6:40 PM</span><span class="c">ARI @ PIT</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">Arizona<u>55-52</u></span>
+        <span class="tv">4.5</span></div>
+      <div class="tr"><span class="tn">Pittsburgh<u>55-52</u></span>
+        <span class="tv">5.1</span></div>
+      <div class="sp">Bubba Chandler (101 ip)<br>
+        Brandon Pfaadt (65 ip)<br>
+        home win 54.8% · pythag exp 1.912</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">Pittsburgh ML</div><div class="bar"><span class="bg" style="width:32.2%;background:var(--posdeep)"></span><span class="bg" style="width:16.4%;background:var(--pos)"></span><span class="bf" style="left:16.4%;width:15.9%"></span></div><div class="sc"><span>model 54.8% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+4.7%<u>net ev</u></div>
+  <div class="st">★★★★☆<u>rating</u></div>
+  <div class="pr">-110<u>1.19% stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">Arizona +1½</div><div class="bar"><span class="bg" style="width:81.4%;background:var(--posdeep)"></span><span class="bg" style="width:65.9%;background:var(--pos)"></span><span class="bf" style="left:65.9%;width:15.5%"></span></div><div class="sc"><span>model 59.9% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+19.8%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">+100<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">o8.5</div><div class="bar"><span class="bg" style="width:31.3%;background:var(--posdeep)"></span><span class="bg" style="width:15.5%;background:var(--pos)"></span><span class="bf" style="left:15.5%;width:15.9%"></span></div><div class="sc"><span>model 54.7% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+4.4%<u>net ev</u></div>
+  <div class="st">★★★★☆<u>rating</u></div>
+  <div class="pr">-110<u>1.12% stake</u></div>
+</div></div>
+  </div>
+</div><div class="card">
+  <div class="head"><span class="t">TUE 07/28 6:40 PM</span><span class="c">TEX @ TBR</span><span class="fl">thin starter</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">Texas<u>54-52</u></span>
+        <span class="tv">4.1</span></div>
+      <div class="tr"><span class="tn">Tampa Bay<u>62-43</u></span>
+        <span class="tv">4.5</span></div>
+      <div class="sp">Griffin Jax (81 ip)<br>
+        TBD (0 ip)<br>
+        home win 53.8% · pythag exp 1.852</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">Tampa Bay ML</div><div class="bar"><span class="bg" style="width:25.6%;background:var(--posdeep)"></span><span class="bg" style="width:9.7%;background:var(--pos)"></span><span class="bf" style="left:9.7%;width:15.9%"></span></div><div class="sc"><span>model 53.8% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+2.8%<u>net ev</u></div>
+  <div class="st">★★☆☆☆<u>rating</u></div>
+  <div class="pr">-110<u>— stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">Texas +1½</div><div class="bar"><span class="bg" style="width:96.3%;background:var(--posdeep)"></span><span class="bg" style="width:80.8%;background:var(--pos)"></span><span class="bf" style="left:80.8%;width:15.5%"></span></div><div class="sc"><span>model 62.1% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+24.2%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">+100<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">u8.5</div><div class="bar"><span class="bg" style="width:29.2%;background:var(--posdeep)"></span><span class="bg" style="width:13.3%;background:var(--pos)"></span><span class="bf" style="left:13.3%;width:15.9%"></span></div><div class="sc"><span>model 54.4% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+3.8%<u>net ev</u></div>
+  <div class="st">★★☆☆☆<u>rating</u></div>
+  <div class="pr">-110<u>— stake</u></div>
+</div></div>
+  </div>
+</div><div class="card">
+  <div class="head"><span class="t">TUE 07/28 6:40 PM</span><span class="c">PHI @ MIA</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">Philadelphia<u>57-50</u></span>
+        <span class="tv">4.2</span></div>
+      <div class="tr"><span class="tn">Miami<u>53-54</u></span>
+        <span class="tv">4.7</span></div>
+      <div class="sp">Sandy Alcantara (144 ip)<br>
+        Aaron Nola (108 ip)<br>
+        home win 55.1% · pythag exp 1.872</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">Miami ML</div><div class="bar"><span class="bg" style="width:33.8%;background:var(--posdeep)"></span><span class="bg" style="width:18.0%;background:var(--pos)"></span><span class="bf" style="left:18.0%;width:15.9%"></span></div><div class="sc"><span>model 55.1% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+5.1%<u>net ev</u></div>
+  <div class="st">★★★★☆<u>rating</u></div>
+  <div class="pr">-110<u>1.42% stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">Philadelphia +1½</div><div class="bar"><span class="bg" style="width:85.2%;background:var(--posdeep)"></span><span class="bg" style="width:69.8%;background:var(--pos)"></span><span class="bf" style="left:69.8%;width:15.5%"></span></div><div class="sc"><span>model 60.5% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+20.9%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">+100<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">u8.5<span class="fl pass">pass</span></div><div class="bar"><span class="bg" style="width:8.1%;background:var(--negdeep)"></span><span class="bg" style="width:0.0%;background:var(--neg)"></span><span class="bf" style="left:0.0%;width:8.1%"></span></div><div class="sc"><span>model 51.2% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--neg)">-2.2%<u>net ev</u></div>
+  <div class="st">★☆☆☆☆<u>rating</u></div>
+  <div class="pr">-110<u>— stake</u></div>
+</div></div>
+  </div>
+</div><div class="card">
+  <div class="head"><span class="t">TUE 07/28 6:45 PM</span><span class="c">TOR @ WSN</span><span class="fl">thin starter</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">Toronto<u>49-58</u></span>
+        <span class="tv">4.0</span></div>
+      <div class="tr"><span class="tn">Washington<u>54-53</u></span>
+        <span class="tv">5.7</span></div>
+      <div class="sp">Cade Cavalli (111 ip)<br>
+        Shane Bieber (31 ip)<br>
+        home win 64.7% · pythag exp 1.917</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">Washington ML</div><div class="bar"><span class="bg" style="width:98.0%;background:var(--posdeep)"></span><span class="bg" style="width:82.1%;background:var(--pos)"></span><span class="bf" style="left:82.1%;width:15.9%"></span></div><div class="sc"><span>model 64.7% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+23.5%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">-110<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">Toronto +1½<span class="fl pass">pass</span></div><div class="bar"><span class="bg" style="width:13.8%;background:var(--negdeep)"></span><span class="bg" style="width:0.0%;background:var(--neg)"></span><span class="bf" style="left:0.0%;width:13.8%"></span></div><div class="sc"><span>model 49.8% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--neg)">-0.5%<u>net ev</u></div>
+  <div class="st">★★☆☆☆<u>rating</u></div>
+  <div class="pr">+100<u>— stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">o8.5</div><div class="bar"><span class="bg" style="width:35.4%;background:var(--posdeep)"></span><span class="bg" style="width:19.5%;background:var(--pos)"></span><span class="bf" style="left:19.5%;width:15.9%"></span></div><div class="sc"><span>model 55.3% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+5.6%<u>net ev</u></div>
+  <div class="st">★★★☆☆<u>rating</u></div>
+  <div class="pr">-110<u>0.67% stake</u></div>
+</div></div>
+  </div>
+</div><div class="card">
+  <div class="head"><span class="t">TUE 07/28 7:10 PM</span><span class="c">ATL @ NYM</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">Atlanta<u>62-44</u></span>
+        <span class="tv">4.6</span></div>
+      <div class="tr"><span class="tn">New York<u>45-62</u></span>
+        <span class="tv">3.6</span></div>
+      <div class="sp">Christian Scott (63 ip)<br>
+        Chris Sale (111 ip)<br>
+        home win 40.6% · pythag exp 1.824</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">Atlanta ML</div><div class="bar"><span class="bg" style="width:62.5%;background:var(--posdeep)"></span><span class="bg" style="width:46.6%;background:var(--pos)"></span><span class="bf" style="left:46.6%;width:15.9%"></span></div><div class="sc"><span>model 59.4% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+13.3%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">-110<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">Atlanta +1½</div><div class="bar"><span class="bg" style="width:100.0%;background:var(--posdeep)"></span><span class="bg" style="width:84.5%;background:var(--pos)"></span><span class="bf" style="left:84.5%;width:15.5%"></span></div><div class="sc"><span>model 74.7% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+49.5%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">+100<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">u8.5</div><div class="bar"><span class="bg" style="width:57.7%;background:var(--posdeep)"></span><span class="bg" style="width:41.8%;background:var(--pos)"></span><span class="bf" style="left:41.8%;width:15.9%"></span></div><div class="sc"><span>model 58.6% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+12.0%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">-110<u>2.00% stake</u></div>
+</div></div>
+  </div>
+</div><div class="card">
+  <div class="head"><span class="t">TUE 07/28 7:40 PM</span><span class="c">KCR @ MIN</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">Kansas City<u>45-62</u></span>
+        <span class="tv">4.4</span></div>
+      <div class="tr"><span class="tn">Minnesota<u>53-54</u></span>
+        <span class="tv">5.1</span></div>
+      <div class="sp">Taj Bradley (115 ip)<br>
+        Seth Lugo (118 ip)<br>
+        home win 56.0% · pythag exp 1.909</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">Minnesota ML</div><div class="bar"><span class="bg" style="width:39.7%;background:var(--posdeep)"></span><span class="bg" style="width:23.8%;background:var(--pos)"></span><span class="bf" style="left:23.8%;width:15.9%"></span></div><div class="sc"><span>model 56.0% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+6.8%<u>net ev</u></div>
+  <div class="st">★★★★☆<u>rating</u></div>
+  <div class="pr">-110<u>1.88% stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">Kansas City +1½</div><div class="bar"><span class="bg" style="width:74.4%;background:var(--posdeep)"></span><span class="bg" style="width:58.9%;background:var(--pos)"></span><span class="bf" style="left:58.9%;width:15.5%"></span></div><div class="sc"><span>model 58.8% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+17.7%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">+100<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">o8.5</div><div class="bar"><span class="bg" style="width:28.6%;background:var(--posdeep)"></span><span class="bg" style="width:12.8%;background:var(--pos)"></span><span class="bf" style="left:12.8%;width:15.9%"></span></div><div class="sc"><span>model 54.3% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+3.7%<u>net ev</u></div>
+  <div class="st">★★★☆☆<u>rating</u></div>
+  <div class="pr">-110<u>1.01% stake</u></div>
+</div></div>
+  </div>
+</div><div class="card">
+  <div class="head"><span class="t">TUE 07/28 7:40 PM</span><span class="c">NYY @ CHW</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">New York<u>60-46</u></span>
+        <span class="tv">5.1</span></div>
+      <div class="tr"><span class="tn">Chicago<u>55-50</u></span>
+        <span class="tv">4.5</span></div>
+      <div class="sp">Anthony Kay (98 ip)<br>
+        Gerrit Cole (62 ip)<br>
+        home win 45.5% · pythag exp 1.916</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">New York ML</div><div class="bar"><span class="bg" style="width:29.9%;background:var(--posdeep)"></span><span class="bg" style="width:14.0%;background:var(--pos)"></span><span class="bf" style="left:14.0%;width:15.9%"></span></div><div class="sc"><span>model 54.5% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+4.0%<u>net ev</u></div>
+  <div class="st">★★★☆☆<u>rating</u></div>
+  <div class="pr">-110<u>0.95% stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">New York +1½</div><div class="bar"><span class="bg" style="width:100.0%;background:var(--posdeep)"></span><span class="bg" style="width:84.5%;background:var(--pos)"></span><span class="bf" style="left:84.5%;width:15.5%"></span></div><div class="sc"><span>model 68.6% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+37.2%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">+100<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">o8.5</div><div class="bar"><span class="bg" style="width:36.1%;background:var(--posdeep)"></span><span class="bg" style="width:20.2%;background:var(--pos)"></span><span class="bf" style="left:20.2%;width:15.9%"></span></div><div class="sc"><span>model 55.4% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+5.8%<u>net ev</u></div>
+  <div class="st">★★★★☆<u>rating</u></div>
+  <div class="pr">-110<u>1.41% stake</u></div>
+</div></div>
+  </div>
+</div><div class="card">
+  <div class="head"><span class="t">TUE 07/28 7:45 PM</span><span class="c">CHC @ STL</span><span class="fl">thin starter</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">Chicago<u>60-46</u></span>
+        <span class="tv">4.9</span></div>
+      <div class="tr"><span class="tn">St. Louis<u>53-53</u></span>
+        <span class="tv">4.8</span></div>
+      <div class="sp">TBD (0 ip)<br>
+        Colin Rea (106 ip)<br>
+        home win 49.6% · pythag exp 1.919</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">Chicago ML<span class="fl pass">pass</span></div><div class="bar"><span class="bg" style="width:2.3%;background:var(--negdeep)"></span><span class="bg" style="width:0.0%;background:var(--neg)"></span><span class="bf" style="left:0.0%;width:2.3%"></span></div><div class="sc"><span>model 50.4% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--neg)">-3.9%<u>net ev</u></div>
+  <div class="st">★☆☆☆☆<u>rating</u></div>
+  <div class="pr">-110<u>— stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">Chicago +1½</div><div class="bar"><span class="bg" style="width:100.0%;background:var(--posdeep)"></span><span class="bg" style="width:84.5%;background:var(--pos)"></span><span class="bf" style="left:84.5%;width:15.5%"></span></div><div class="sc"><span>model 64.7% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+29.4%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">+100<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">o8.5</div><div class="bar"><span class="bg" style="width:39.0%;background:var(--posdeep)"></span><span class="bg" style="width:23.1%;background:var(--pos)"></span><span class="bf" style="left:23.1%;width:15.9%"></span></div><div class="sc"><span>model 55.9% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+6.6%<u>net ev</u></div>
+  <div class="st">★★☆☆☆<u>rating</u></div>
+  <div class="pr">-110<u>0.13% stake</u></div>
+</div></div>
+  </div>
+</div><div class="card">
+  <div class="head"><span class="t">TUE 07/28 9:38 PM</span><span class="c">HOU @ LAA</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">Houston<u>53-55</u></span>
+        <span class="tv">4.4</span></div>
+      <div class="tr"><span class="tn">Los Angeles<u>42-65</u></span>
+        <span class="tv">4.6</span></div>
+      <div class="sp">Reid Detmers (120 ip)<br>
+        Peter Lambert (98 ip)<br>
+        home win 52.4% · pythag exp 1.879</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">Los Angeles ML<span class="fl pass">pass</span></div><div class="bar"><span class="bg" style="width:15.7%;background:var(--negdeep)"></span><span class="bg" style="width:0.0%;background:var(--neg)"></span><span class="bf" style="left:0.0%;width:15.7%"></span></div><div class="sc"><span>model 52.4% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--neg)">-0.1%<u>net ev</u></div>
+  <div class="st">★★☆☆☆<u>rating</u></div>
+  <div class="pr">-110<u>— stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">Houston +1½</div><div class="bar"><span class="bg" style="width:100.0%;background:var(--posdeep)"></span><span class="bg" style="width:84.5%;background:var(--pos)"></span><span class="bf" style="left:84.5%;width:15.5%"></span></div><div class="sc"><span>model 62.9% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+25.9%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">+100<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">u8.5<span class="fl pass">pass</span></div><div class="bar"><span class="bg" style="width:0.9%;background:var(--negdeep)"></span><span class="bg" style="width:0.0%;background:var(--neg)"></span><span class="bf" style="left:0.0%;width:0.9%"></span></div><div class="sc"><span>model 50.1% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--neg)">-4.3%<u>net ev</u></div>
+  <div class="st">★☆☆☆☆<u>rating</u></div>
+  <div class="pr">-110<u>— stake</u></div>
+</div></div>
+  </div>
+</div><div class="card">
+  <div class="head"><span class="t">TUE 07/28 9:40 PM</span><span class="c">BOS @ ATH</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">Boston<u>55-50</u></span>
+        <span class="tv">4.9</span></div>
+      <div class="tr"><span class="tn">Athletics<u>44-62</u></span>
+        <span class="tv">4.3</span></div>
+      <div class="sp">Gage Jump (57 ip)<br>
+        Jake Bennett (59 ip)<br>
+        home win 44.9% · pythag exp 1.886</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">Boston ML</div><div class="bar"><span class="bg" style="width:34.0%;background:var(--posdeep)"></span><span class="bg" style="width:18.1%;background:var(--pos)"></span><span class="bf" style="left:18.1%;width:15.9%"></span></div><div class="sc"><span>model 55.1% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+5.2%<u>net ev</u></div>
+  <div class="st">★★★★☆<u>rating</u></div>
+  <div class="pr">-110<u>1.16% stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">Boston +1½</div><div class="bar"><span class="bg" style="width:100.0%;background:var(--posdeep)"></span><span class="bg" style="width:84.5%;background:var(--pos)"></span><span class="bf" style="left:84.5%;width:15.5%"></span></div><div class="sc"><span>model 69.7% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+39.5%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">+100<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">o8.5<span class="fl pass">pass</span></div><div class="bar"><span class="bg" style="width:6.0%;background:var(--negdeep)"></span><span class="bg" style="width:0.0%;background:var(--neg)"></span><span class="bf" style="left:0.0%;width:6.0%"></span></div><div class="sc"><span>model 50.9% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--neg)">-2.8%<u>net ev</u></div>
+  <div class="st">★☆☆☆☆<u>rating</u></div>
+  <div class="pr">-110<u>— stake</u></div>
+</div></div>
+  </div>
+</div><div class="card">
+  <div class="head"><span class="t">TUE 07/28 9:40 PM</span><span class="c">COL @ SDP</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">Colorado<u>42-65</u></span>
+        <span class="tv">4.4</span></div>
+      <div class="tr"><span class="tn">San Diego<u>53-53</u></span>
+        <span class="tv">4.9</span></div>
+      <div class="sp">Michael King (119 ip)<br>
+        Michael Lorenzen (101 ip)<br>
+        home win 54.1% · pythag exp 1.894</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">San Diego ML</div><div class="bar"><span class="bg" style="width:27.6%;background:var(--posdeep)"></span><span class="bg" style="width:11.7%;background:var(--pos)"></span><span class="bf" style="left:11.7%;width:15.9%"></span></div><div class="sc"><span>model 54.1% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+3.4%<u>net ev</u></div>
+  <div class="st">★★★☆☆<u>rating</u></div>
+  <div class="pr">-110<u>0.92% stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">Colorado +1½</div><div class="bar"><span class="bg" style="width:88.3%;background:var(--posdeep)"></span><span class="bg" style="width:72.9%;background:var(--pos)"></span><span class="bf" style="left:72.9%;width:15.5%"></span></div><div class="sc"><span>model 60.9% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+21.9%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">+100<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">o8.5<span class="fl pass">pass</span></div><div class="bar"><span class="bg" style="width:13.5%;background:var(--negdeep)"></span><span class="bg" style="width:0.0%;background:var(--neg)"></span><span class="bf" style="left:0.0%;width:13.5%"></span></div><div class="sc"><span>model 52.0% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--neg)">-0.7%<u>net ev</u></div>
+  <div class="st">★★☆☆☆<u>rating</u></div>
+  <div class="pr">-110<u>— stake</u></div>
+</div></div>
+  </div>
+</div><div class="card">
+  <div class="head"><span class="t">TUE 07/28 9:45 PM</span><span class="c">MIL @ SFG</span><span class="fl">thin starter</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">Milwaukee<u>66-40</u></span>
+        <span class="tv">4.3</span></div>
+      <div class="tr"><span class="tn">San Francisco<u>45-61</u></span>
+        <span class="tv">3.6</span></div>
+      <div class="sp">Landen Roupp (110 ip)<br>
+        Logan Henderson (38 ip)<br>
+        home win 43.1% · pythag exp 1.81</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">Milwaukee ML</div><div class="bar"><span class="bg" style="width:46.1%;background:var(--posdeep)"></span><span class="bg" style="width:30.2%;background:var(--pos)"></span><span class="bf" style="left:30.2%;width:15.9%"></span></div><div class="sc"><span>model 56.9% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+8.6%<u>net ev</u></div>
+  <div class="st">★★★★☆<u>rating</u></div>
+  <div class="pr">-110<u>1.47% stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">Milwaukee +1½</div><div class="bar"><span class="bg" style="width:100.0%;background:var(--posdeep)"></span><span class="bg" style="width:84.5%;background:var(--pos)"></span><span class="bf" style="left:84.5%;width:15.5%"></span></div><div class="sc"><span>model 72.9% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+45.8%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">+100<u>2.00% stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">u8.5</div><div class="bar"><span class="bg" style="width:71.4%;background:var(--posdeep)"></span><span class="bg" style="width:55.5%;background:var(--pos)"></span><span class="bf" style="left:55.5%;width:15.9%"></span></div><div class="sc"><span>model 60.7% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+15.9%<u>net ev</u></div>
+  <div class="st">★★★★★<u>rating</u></div>
+  <div class="pr">-110<u>2.00% stake</u></div>
+</div></div>
+  </div>
+</div><div class="card">
+  <div class="head"><span class="t">TUE 07/28 10:10 PM</span><span class="c">SEA @ LAD</span><span class="fl">thin starter</span></div>
+  <div class="body">
+    <div class="proj">
+      <div class="lbl">Projected runs</div>
+      <div class="tr"><span class="tn">Seattle<u>52-55</u></span>
+        <span class="tv">3.9</span></div>
+      <div class="tr"><span class="tn">Los Angeles<u>67-39</u></span>
+        <span class="tv">5.0</span></div>
+      <div class="sp">TBD (0 ip)<br>
+        Luis Castillo (95 ip)<br>
+        home win 59.4% · pythag exp 1.872</div>
+    </div>
+    <div class="mkts"><div class="m">
+  <span class="mn">Money</span>
+  <div><div class="pk">Los Angeles ML</div><div class="bar"><span class="bg" style="width:62.4%;background:var(--posdeep)"></span><span class="bg" style="width:46.5%;background:var(--pos)"></span><span class="bf" style="left:46.5%;width:15.9%"></span></div><div class="sc"><span>model 59.4% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+13.3%<u>net ev</u></div>
+  <div class="st">★★★☆☆<u>rating</u></div>
+  <div class="pr">-110<u>0.96% stake</u></div>
+</div><div class="m">
+  <span class="mn">Spread</span>
+  <div><div class="pk">Seattle +1½</div><div class="bar"><span class="bg" style="width:57.0%;background:var(--posdeep)"></span><span class="bg" style="width:41.5%;background:var(--pos)"></span><span class="bf" style="left:41.5%;width:15.5%"></span></div><div class="sc"><span>model 56.2% · market 47.7%</span><span>drag −2.32pp</span></div></div>
+  <div class="ev" style="color:var(--pos)">+12.4%<u>net ev</u></div>
+  <div class="st">★★★☆☆<u>rating</u></div>
+  <div class="pr">+100<u>0.76% stake</u></div>
+</div><div class="m">
+  <span class="mn">Total</span>
+  <div><div class="pk">u8.5<span class="fl pass">pass</span></div><div class="bar"><span class="bg" style="width:8.6%;background:var(--negdeep)"></span><span class="bg" style="width:0.0%;background:var(--neg)"></span><span class="bf" style="left:0.0%;width:8.6%"></span></div><div class="sc"><span>model 51.3% · market 50.0%</span><span>drag −2.38pp</span></div></div>
+  <div class="ev" style="color:var(--neg)">-2.1%<u>net ev</u></div>
+  <div class="st">★☆☆☆☆<u>rating</u></div>
+  <div class="pr">-110<u>— stake</u></div>
+</div></div>
+  </div>
+</div>
+<footer>
+<p>Runs projected by odds-ratio expectancy: league RPG scaled by regressed team offense, regressed staff RA9 (FIP for starters at a 70-IP crossover, blended 58/42 with bullpen), park factor, and home-field. Scoring is Negative Binomial with k=4.2, convolved independently across both sides; ties resolve 52/48 to the home club for extra innings.</p>
+<p>Market probabilities are power-devigged from the two-way price. The hatched span on each bar is the portion of gross edge consumed by hold; only the solid remainder is real. Ratings measure dampened edge against model uncertainty, so a thin-sample starter rates below an equivalent edge from a settled projection — the rating is not a restatement of EV. Stakes are quarter-Kelly, capped at 2% of bankroll.</p>
+</footer></div></body></html>

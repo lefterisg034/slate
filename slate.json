@@ -49,26 +49,6 @@
           "hbp": 0,
           "so": 124
         }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
-        }
       }
     },
     {
@@ -116,26 +96,6 @@
           "bb": 0,
           "hbp": 0,
           "so": 0
-        }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
         }
       }
     },
@@ -185,26 +145,6 @@
           "hbp": 2,
           "so": 55
         }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
-        }
       }
     },
     {
@@ -252,26 +192,6 @@
           "bb": 56,
           "hbp": 5,
           "so": 90
-        }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
         }
       }
     },
@@ -321,26 +241,6 @@
           "hbp": 2,
           "so": 82
         }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
-        }
       }
     },
     {
@@ -388,26 +288,6 @@
           "bb": 38,
           "hbp": 7,
           "so": 110
-        }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
         }
       }
     },
@@ -457,26 +337,6 @@
           "hbp": 12,
           "so": 127
         }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
-        }
       }
     },
     {
@@ -524,26 +384,6 @@
           "bb": 29,
           "hbp": 5,
           "so": 78
-        }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
         }
       }
     },
@@ -593,26 +433,6 @@
           "hbp": 2,
           "so": 129
         }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
-        }
       }
     },
     {
@@ -660,26 +480,6 @@
           "bb": 40,
           "hbp": 19,
           "so": 80
-        }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
         }
       }
     },
@@ -729,26 +529,6 @@
           "hbp": 0,
           "so": 0
         }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
-        }
       }
     },
     {
@@ -796,26 +576,6 @@
           "bb": 37,
           "hbp": 4,
           "so": 136
-        }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
         }
       }
     },
@@ -865,26 +625,6 @@
           "hbp": 3,
           "so": 61
         }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
-        }
       }
     },
     {
@@ -932,26 +672,6 @@
           "bb": 49,
           "hbp": 9,
           "so": 103
-        }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
         }
       }
     },
@@ -1001,26 +721,6 @@
           "hbp": 3,
           "so": 113
         }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
-        }
       }
     },
     {
@@ -1068,26 +768,6 @@
           "bb": 0,
           "hbp": 0,
           "so": 0
-        }
-      },
-      "markets": {
-        "ml": {
-          "home": -110,
-          "away": -110,
-          "book": ""
-        },
-        "rl": {
-          "line": 1.5,
-          "home_fav": true,
-          "fav": -120,
-          "dog": 100,
-          "book": ""
-        },
-        "tot": {
-          "line": 8.5,
-          "over": -110,
-          "under": -110,
-          "book": ""
         }
       }
     }

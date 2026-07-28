@@ -1,139 +1,304 @@
-"""Renders evaluated slate output to a standalone HTML dashboard."""
+"""
+Pulls today's real MLB slate and writes slate.json for the model.
 
-CSS = """
-:root{--ground:#12161E;--panel:#1A1F29;--panel2:#212734;--rule:#2B3240;--rule2:#242A35;
---bone:#EAE7DE;--dim:#98A0AD;--faint:#69707E;--pos:#4FB79A;--posdeep:#1D5748;
---neg:#C9705A;--negdeep:#632E22;--warn:#D8A548;--warndeep:#46330F;--focus:#7FA8D9}
-*{box-sizing:border-box}html,body{margin:0;padding:0}
-body{background:var(--ground);color:var(--bone);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1180px;margin:0 auto;padding:30px 20px 70px}
-.mast{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;border-bottom:1px solid var(--rule);padding-bottom:16px}
-h1{font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:700;font-size:29px;letter-spacing:-.01em;margin:0;line-height:1}
-h1 span{color:var(--faint);font-weight:400}
-.meta{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--dim);text-align:right;line-height:1.75}
-.notice{margin:18px 0 24px;border:1px solid var(--warndeep);background:rgba(216,165,72,.06);border-radius:6px;padding:13px 15px;font-size:13.5px;color:var(--dim);display:flex;gap:11px}
-.notice b{color:var(--warn);font-weight:500}
-.notice i{font-style:normal;font-family:"IBM Plex Mono",monospace;color:var(--warn);flex:none}
-.card{background:var(--panel);border:1px solid var(--rule);border-radius:8px;margin-top:16px;overflow:hidden}
-.head{display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:1px solid var(--rule2);background:var(--panel2)}
-.t{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--dim)}
-.c{font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:600;font-size:13px;letter-spacing:.11em;color:var(--faint)}
-.body{display:grid;grid-template-columns:minmax(0,246px) minmax(0,1fr)}
-@media(max-width:820px){.body{grid-template-columns:1fr}}
-.proj{padding:15px 16px;border-right:1px solid var(--rule2)}
-@media(max-width:820px){.proj{border-right:none;border-bottom:1px solid var(--rule2)}}
-.lbl{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--faint);margin-bottom:9px}
-.tr{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:6px 0}
-.tr+.tr{border-top:1px solid var(--rule2)}
-.tn{font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:600;font-size:16px}
-.tn u{text-decoration:none;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--faint);font-weight:400;margin-left:6px}
-.tv{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:24px;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
-.sp{margin-top:10px;font-family:"IBM Plex Mono",monospace;font-size:10.5px;color:var(--faint);line-height:1.75}
-.mkts{display:flex;flex-direction:column}
-.m{display:grid;grid-template-columns:66px minmax(0,1fr) 88px 74px 96px;gap:12px;align-items:center;padding:11px 16px}
-.m+.m{border-top:1px solid var(--rule2)}
-@media(max-width:820px){.m{grid-template-columns:64px minmax(0,1fr) 80px;row-gap:7px}.m .pr{grid-column:2/4;text-align:left}.m .st{display:none}}
-.mn{font-family:"IBM Plex Sans Condensed",sans-serif;font-weight:600;font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--dim)}
-.pk{font-family:"IBM Plex Mono",monospace;font-size:13px;margin-bottom:6px}
-.pk em{font-style:normal;color:var(--faint)}
-.bar{position:relative;height:8px;background:var(--panel2);border-radius:2px;overflow:hidden}
-.bg{position:absolute;left:0;top:0;bottom:0;border-radius:2px}
-.bf{position:absolute;top:0;bottom:0;background-image:repeating-linear-gradient(115deg,rgba(234,231,222,.3) 0 2px,transparent 2px 5px)}
-.sc{display:flex;justify-content:space-between;font-family:"IBM Plex Mono",monospace;font-size:9.5px;color:var(--faint);margin-top:4px}
-.ev{font-family:"IBM Plex Mono",monospace;font-weight:600;font-size:18px;text-align:right;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
-.ev u{display:block;text-decoration:none;font-size:9.5px;font-weight:400;letter-spacing:.07em;text-transform:uppercase;color:var(--faint)}
-.st{text-align:center;font-size:11px;letter-spacing:.09em;color:var(--warn);font-family:"IBM Plex Mono",monospace}
-.st u{display:block;text-decoration:none;font-size:9.5px;color:var(--faint);letter-spacing:.07em;text-transform:uppercase;margin-top:1px}
-.pr{text-align:right;font-family:"IBM Plex Mono",monospace;font-size:13px;font-variant-numeric:tabular-nums}
-.pr u{display:block;text-decoration:none;font-size:9.5px;color:var(--faint);letter-spacing:.07em;text-transform:uppercase}
-.bk{display:inline-block;font-size:9.5px;letter-spacing:.06em;background:var(--panel2);border:1px solid var(--rule);color:var(--dim);padding:1px 5px;border-radius:3px;margin-left:5px}
-.fl{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;margin-left:6px;background:var(--warndeep);color:var(--warn)}
-.pass{background:#282E38;color:var(--faint)}
-footer{margin-top:38px;padding-top:18px;border-top:1px solid var(--rule);font-size:13px;color:var(--faint);line-height:1.8}
-footer code{font-family:"IBM Plex Mono",monospace;color:var(--dim);background:var(--panel2);padding:1px 5px;border-radius:3px;font-size:12px}
+Sources:
+  - statsapi.mlb.com  (free, no key)  -> schedule, probable starters,
+                                         standings, team pitching
+  - the-odds-api.com  (free key)      -> moneyline, run line, totals
+
+If no odds key is present the slate is still built, with markets omitted.
+The dashboard then shows projections only, no EV.
 """
 
+import datetime as dt
+import json
+import os
+import sys
+import time
+import urllib.parse
 
-def bar_html(r):
-    scale = 0.15
-    gross = min(abs(r["gross"]) / scale, 1) * 100
-    fee = min(abs(r["drag"]) / scale, 1) * 100
-    solid = max(gross - fee, 0)
-    good = r["ev"] >= 0
-    col = "var(--pos)" if good else "var(--neg)"
-    deep = "var(--posdeep)" if good else "var(--negdeep)"
-    return (f'<div class="bar"><span class="bg" style="width:{gross:.1f}%;background:{deep}"></span>'
-            f'<span class="bg" style="width:{solid:.1f}%;background:{col}"></span>'
-            f'<span class="bf" style="left:{solid:.1f}%;width:{min(fee,gross):.1f}%"></span></div>'
-            f'<div class="sc"><span>model {r["p"]*100:.1f}% \u00b7 market {r["mkt"]*100:.1f}%</span>'
-            f'<span>drag \u2212{r["drag"]*100:.2f}pp</span></div>')
+import requests
 
+MLB = "https://statsapi.mlb.com/api/v1"
+ODDS = "https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/"
+SEASON = dt.date.today().year
+UA = {"User-Agent": "slate-model/1.0"}
 
-def row_html(r):
-    good = r["ev"] >= 0
-    suspect = r.get("suspect")
-    col = "var(--warn)" if suspect else ("var(--pos)" if good else "var(--neg)")
-    if suspect:
-        flag = '<span class="fl">implausible \u2014 check line</span>'
-    elif not good:
-        flag = '<span class="fl pass">pass</span>'
-    else:
-        flag = ''
-    book = f'<span class="bk">{r["book"]}</span>' if r["book"] else '<span class="bk">no book</span>'
-    stake = f'{r["stake"]*100:.2f}%' if r["stake"] > 0 else '\u2014'
-    return f"""<div class="m">
-  <span class="mn">{r['label']}</span>
-  <div><div class="pk">{r['pick']}{flag}</div>{bar_html(r)}</div>
-  <div class="ev" style="color:{col}">{'+' if good else ''}{r['ev']*100:.1f}%<u>net ev</u></div>
-  <div class="st">{'\u2605'*r['stars']}{'\u2606'*(5-r['stars'])}<u>rating</u></div>
-  <div class="pr">{r['price_label']}{book}<u>{stake} stake</u></div>
-</div>"""
+# Runs park factors, 100 = neutral, expressed as multipliers.
+# Update yearly from Statcast park factors; these are stable enough year to year.
+PARK = {
+    "COL": 1.18, "CIN": 1.07, "BOS": 1.05, "ATH": 1.06, "ARI": 1.04,
+    "CHC": 1.03, "NYY": 1.03, "BAL": 1.02, "TEX": 1.02, "CHW": 1.02,
+    "KCR": 1.01, "PHI": 1.01, "WSN": 1.01, "LAA": 1.01, "TOR": 1.01,
+    "MIN": 1.00, "ATL": 1.00, "MIL": 1.00, "LAD": 1.00, "HOU": 0.99,
+    "DET": 0.99, "STL": 0.99, "NYM": 0.98, "CLE": 0.98, "TBR": 0.97,
+    "PIT": 0.97, "MIA": 0.96, "SDP": 0.95, "SEA": 0.94, "SFG": 0.94,
+}
 
-
-def card_html(g):
-    thin = min(g["away"]["ip"], g["home"]["ip"]) < 40
-    flag = '<span class="fl">thin starter</span>' if thin else ''
-    if g.get("unpriced"):
-        flag += '<span class="fl">no odds \u2014 projection only</span>'
-    return f"""<div class="card">
-  <div class="head"><span class="t">{g['time']}</span><span class="c">{g['code']}</span>{flag}</div>
-  <div class="body">
-    <div class="proj">
-      <div class="lbl">Projected runs</div>
-      <div class="tr"><span class="tn">{g['away']['name']}<u>{g['away']['rec']}</u></span>
-        <span class="tv">{g['away']['mu']:.1f}</span></div>
-      <div class="tr"><span class="tn">{g['home']['name']}<u>{g['home']['rec']}</u></span>
-        <span class="tv">{g['home']['mu']:.1f}</span></div>
-      <div class="sp">{g['home']['sp']} ({g['home']['ip']:.0f} ip)<br>
-        {g['away']['sp']} ({g['away']['ip']:.0f} ip)<br>
-        home win {g['home_win']*100:.1f}% \u00b7 pythag exp {g['pythag_exp']}</div>
-    </div>
-    <div class="mkts">{''.join(row_html(r) for r in g['rows'])}</div>
-  </div>
-</div>"""
+# statsapi team id -> (abbr, short display name)
+TEAMS = {
+    108: ("LAA", "Los Angeles"), 109: ("ARI", "Arizona"), 110: ("BAL", "Baltimore"),
+    111: ("BOS", "Boston"), 112: ("CHC", "Chicago"), 113: ("CIN", "Cincinnati"),
+    114: ("CLE", "Cleveland"), 115: ("COL", "Colorado"), 116: ("DET", "Detroit"),
+    117: ("HOU", "Houston"), 118: ("KCR", "Kansas City"), 119: ("LAD", "Los Angeles"),
+    120: ("WSN", "Washington"), 121: ("NYM", "New York"), 133: ("ATH", "Athletics"),
+    134: ("PIT", "Pittsburgh"), 135: ("SDP", "San Diego"), 136: ("SEA", "Seattle"),
+    137: ("SFG", "San Francisco"), 138: ("STL", "St. Louis"), 139: ("TBR", "Tampa Bay"),
+    140: ("TEX", "Texas"), 141: ("TOR", "Toronto"), 142: ("MIN", "Minnesota"),
+    143: ("PHI", "Philadelphia"), 144: ("ATL", "Atlanta"), 145: ("CHW", "Chicago"),
+    146: ("MIA", "Miami"), 147: ("NYY", "New York"), 158: ("MIL", "Milwaukee"),
+}
 
 
-def write_dashboard(games, path, date="2026-07-28", updated="", has_odds=True):
-    plays = [r for g in games for r in g["rows"] if r["ev"] > 0]
-    best = max((r["ev"] for g in games for r in g["rows"]), default=0)
-    banner = ("<b>Placeholder inputs &mdash; not validated.</b> Stat lines are synthetic."
-              if not has_odds else
-              "<b>Live data, unvalidated model.</b> Stats and odds are real; the model has not been "
-              "walk-forward tested, so no edge below is verified.")
-    html = f"""<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Slate \u2014 {date}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
-<style>{CSS}</style></head><body><div class="wrap">
-<header class="mast"><h1>Slate <span>/ mlb</span></h1>
-<div class="meta">{date} \u00b7 {len(games)} games \u00b7 {len(plays)} positive-ev plays<br>best {best*100:+.1f}% \u00b7 updated {updated}</div></header>
-<div class="notice"><i>!</i><div>{banner}</div></div>
-{''.join(card_html(g) for g in games)}
-<footer>
-<p>Runs projected by odds-ratio expectancy: league RPG scaled by regressed team offense, regressed staff RA9 (FIP for starters at a 70-IP crossover, blended 58/42 with bullpen), park factor, and home-field. Scoring is Negative Binomial with k=4.2, convolved independently across both sides; ties resolve 52/48 to the home club for extra innings.</p>
-<p>Market probabilities are power-devigged from the two-way price. The hatched span on each bar is the portion of gross edge consumed by hold; only the solid remainder is real. Ratings measure dampened edge against model uncertainty, so a thin-sample starter rates below an equivalent edge from a settled projection \u2014 the rating is not a restatement of EV. Stakes are quarter-Kelly, capped at 2% of bankroll.</p>
-</footer></div></body></html>"""
-    with open(path, "w") as f:
-        f.write(html)
+def get(url, **params):
+    for attempt in range(3):
+        try:
+            r = requests.get(url, params=params, headers=UA, timeout=25)
+            r.raise_for_status()
+            return r.json()
+        except Exception as e:
+            if attempt == 2:
+                print(f"  ! failed {url}: {e}", file=sys.stderr)
+                return None
+            time.sleep(2 * (attempt + 1))
+
+
+def fetch_standings():
+    """One call: records, runs scored, runs allowed for all 30 clubs."""
+    data = get(f"{MLB}/standings", leagueId="103,104", season=SEASON, standingsTypes="regularSeason")
+    out = {}
+    if not data:
+        return out
+    for div in data.get("records", []):
+        for tr in div.get("teamRecords", []):
+            tid = tr["team"]["id"]
+            out[tid] = {
+                "wins": tr.get("wins", 0),
+                "losses": tr.get("losses", 0),
+                "games": tr.get("wins", 0) + tr.get("losses", 0),
+                "runs_scored": float(tr.get("runsScored") or 0),
+                "runs_allowed": float(tr.get("runsAllowed") or 0),
+            }
+    return out
+
+
+def ip_to_float(ip):
+    """MLB reports innings as 145.2 meaning 145 and 2/3."""
+    try:
+        s = str(ip)
+        whole, _, frac = s.partition(".")
+        return int(whole) + (int(frac) / 3 if frac else 0.0)
+    except Exception:
+        return 0.0
+
+
+def fetch_team_pitching(tid):
+    data = get(f"{MLB}/teams/{tid}/stats", stats="season", group="pitching",
+               season=SEASON, sportId=1, gameType="R")
+    try:
+        st = data["stats"][0]["splits"][0]["stat"]
+        ip = ip_to_float(st.get("inningsPitched", 0))
+        era = float(st.get("era") or 4.10)
+        # Bullpen proxy: relievers throw ~42% of innings and run slightly
+        # better than the staff line in the modern game.
+        bp_ip = ip * 0.42
+        return {"bullpen_ip": round(bp_ip, 1),
+                "bullpen_er": round(bp_ip / 9 * era * 0.97, 1)}
+    except Exception:
+        return {"bullpen_ip": 400.0, "bullpen_er": 182.0}
+
+
+def fetch_pitcher(pid, name):
+    blank = {"name": name, "ip": 0.0, "hr": 0, "bb": 0, "hbp": 0, "so": 0}
+    if not pid:
+        return blank
+    data = get(f"{MLB}/people/{pid}/stats", stats="season", group="pitching", season=SEASON)
+    try:
+        st = data["stats"][0]["splits"][0]["stat"]
+        return {
+            "name": name,
+            "ip": round(ip_to_float(st.get("inningsPitched", 0)), 1),
+            "hr": int(st.get("homeRuns") or 0),
+            "bb": int(st.get("baseOnBalls") or 0),
+            "hbp": int(st.get("hitByPitch") or 0),
+            "so": int(st.get("strikeOuts") or 0),
+        }
+    except Exception:
+        return blank
+
+
+def fetch_odds(key):
+    if not key:
+        return []
+    data = get(ODDS, apiKey=key, regions="us", markets="h2h,spreads,totals",
+               oddsFormat="american", dateFormat="iso")
+    return data or []
+
+
+def pick_book(event, market_key):
+    """First book offering a complete two-way market."""
+    for bm in event.get("bookmakers", []):
+        for m in bm.get("markets", []):
+            if m["key"] == market_key and len(m.get("outcomes", [])) >= 2:
+                return bm.get("title", "")[:3].upper(), m["outcomes"]
+    return None, None
+
+
+def norm(s):
+    """Normalize a club name for matching across feeds."""
+    s = (s or "").lower().replace(".", "").replace("-", " ")
+    for drop in ("oakland", "sacramento", "las vegas", "los angeles", "new york",
+                 "chicago", "st louis", "saint louis", "san francisco", "san diego",
+                 "kansas city", "tampa bay"):
+        pass
+    return " ".join(s.split())
+
+
+def nickname(s):
+    """Last token is the club nickname; disambiguates same-city clubs poorly,
+    so it is only used as a tiebreak alongside the other side of the matchup."""
+    parts = norm(s).split()
+    return parts[-1] if parts else ""
+
+
+def match_event(events, home_full, away_full):
+    hn, an = norm(home_full), norm(away_full)
+    for e in events:
+        if norm(e.get("home_team")) == hn and norm(e.get("away_team")) == an:
+            return e
+    hk, ak = nickname(home_full), nickname(away_full)
+    for e in events:
+        if nickname(e.get("home_team")) == hk and nickname(e.get("away_team")) == ak:
+            return e
+    return None
+
+
+def build_markets(event, home_full, away_full):
+    if not event:
+        return None
+    out = {}
+
+    bk, oc = pick_book(event, "h2h")
+    if not oc:
+        return None
+    price = {o["name"]: int(o["price"]) for o in oc}
+    if home_full not in price or away_full not in price:
+        return None
+    out["ml"] = {"home": price[home_full], "away": price[away_full], "book": bk}
+
+    bk, oc = pick_book(event, "spreads")
+    if oc:
+        by = {o["name"]: o for o in oc}
+        h, a = by.get(home_full), by.get(away_full)
+        if h and a:
+            home_fav = float(h.get("point", 0)) < 0
+            fav, dog = (h, a) if home_fav else (a, h)
+            out["rl"] = {"line": 1.5, "home_fav": home_fav,
+                         "fav": int(fav["price"]), "dog": int(dog["price"]), "book": bk}
+    if "rl" not in out:
+        out["rl"] = {"line": 1.5, "home_fav": price[home_full] < price[away_full],
+                     "fav": -120, "dog": +100, "book": ""}
+
+    bk, oc = pick_book(event, "totals")
+    if oc:
+        by = {o["name"]: o for o in oc}
+        ov, un = by.get("Over"), by.get("Under")
+        if ov and un:
+            out["tot"] = {"line": float(ov.get("point", 8.5)),
+                          "over": int(ov["price"]), "under": int(un["price"]), "book": bk}
+    if "tot" not in out:
+        out["tot"] = {"line": 8.5, "over": -110, "under": -110, "book": ""}
+
+    return out
+
+
+def main():
+    key = os.environ.get("ODDS_API_KEY", "").strip()
+    today = dt.date.today().isoformat()
+    print(f"building slate for {today}")
+
+    sched = get(f"{MLB}/schedule", sportId=1, date=today,
+                hydrate="probablePitcher,team,linescore")
+    if not sched or not sched.get("dates"):
+        print("no games scheduled")
+        json.dump({"date": today, "source": "statsapi.mlb.com", "games": []},
+                  open("slate.json", "w"), indent=2)
+        return
+
+    standings = fetch_standings()
+    events = fetch_odds(key)
+    print(f"  {len(events)} odds events" if key else "  no odds key -> projections only")
+
+    pitching_cache = {}
+    games, skipped = [], 0
+
+    for g in sched["dates"][0].get("games", []):
+        if g.get("status", {}).get("abstractGameCode") == "F":
+            continue
+
+        h = g["teams"]["home"]["team"]
+        a = g["teams"]["away"]["team"]
+        hid, aid = h["id"], a["id"]
+        if hid not in TEAMS or aid not in TEAMS:
+            continue
+
+        h_abbr, h_short = TEAMS[hid]
+        a_abbr, a_short = TEAMS[aid]
+
+        def team_block(tid, abbr, short):
+            if tid not in pitching_cache:
+                pitching_cache[tid] = fetch_team_pitching(tid)
+                time.sleep(0.15)
+            rec = standings.get(tid, {"wins": 0, "losses": 0, "games": 1,
+                                      "runs_scored": 0, "runs_allowed": 0})
+            return {"name": short, "abbr": abbr, **rec,
+                    **pitching_cache[tid], "park_factor": PARK.get(abbr, 1.00)}
+
+        hp = g["teams"]["home"].get("probablePitcher") or {}
+        ap = g["teams"]["away"].get("probablePitcher") or {}
+        h_sp = fetch_pitcher(hp.get("id"), hp.get("fullName", "TBD"))
+        a_sp = fetch_pitcher(ap.get("id"), ap.get("fullName", "TBD"))
+        time.sleep(0.15)
+
+        ev = match_event(events, h["name"], a["name"])
+        markets = build_markets(ev, h["name"], a["name"])
+        if markets is None:
+            # No real price found. Do NOT invent one -- a fabricated pick'em line
+            # makes an ordinary projection look like a huge edge. Ship the game
+            # with projections only.
+            skipped += 1
+            print(f"  - no odds matched: {a_abbr} @ {h_abbr}")
+
+        try:
+            when = dt.datetime.fromisoformat(g["gameDate"].replace("Z", "+00:00"))
+            local = when - dt.timedelta(hours=4)  # ET
+            stamp = local.strftime("%a %m/%d %-I:%M %p").upper()
+        except Exception:
+            stamp = today
+
+        entry = {
+            "time": stamp,
+            "code": f"{a_abbr} @ {h_abbr}",
+            "away": {"team": team_block(aid, a_abbr, a_short), "starter": a_sp},
+            "home": {"team": team_block(hid, h_abbr, h_short), "starter": h_sp},
+        }
+        if markets:
+            entry["markets"] = markets
+        games.append(entry)
+
+    payload = {
+        "date": today,
+        "source": "statsapi.mlb.com" + (" + the-odds-api.com" if key else ""),
+        "has_odds": bool(key) and skipped < len(games),
+        "games": games,
+    }
+    with open("slate.json", "w") as f:
+        json.dump(payload, f, indent=2)
+
+    priced = sum(1 for g in games if "markets" in g)
+    print(f"  wrote slate.json: {len(games)} games, {priced} priced"
+          + (f", {skipped} without odds (shown as projections only)" if skipped else ""))
+
+
+if __name__ == "__main__":
+    main()

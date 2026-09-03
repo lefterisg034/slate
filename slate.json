@@ -1,319 +1,31 @@
 {
-  "date": "2026-09-02",
+  "date": "2026-09-03",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "WED 09/02 12:40 PM",
-      "code": "SDP @ CIN",
-      "away": {
-        "team": {
-          "name": "San Diego",
-          "abbr": "SDP",
-          "wins": 73,
-          "losses": 66,
-          "games": 139,
-          "runs_scored": 591.0,
-          "runs_allowed": 577.0,
-          "bullpen_ip": 516.9,
-          "bullpen_er": 217.8,
-          "park_factor": 0.95
-        },
-        "starter": {
-          "name": "Casey Mize",
-          "ip": 109.7,
-          "hr": 11,
-          "bb": 27,
-          "hbp": 2,
-          "so": 96
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Cincinnati",
-          "abbr": "CIN",
-          "wins": 66,
-          "losses": 73,
-          "games": 139,
-          "runs_scored": 574.0,
-          "runs_allowed": 686.0,
-          "bullpen_ip": 518.3,
-          "bullpen_er": 260.9,
-          "park_factor": 1.07
-        },
-        "starter": {
-          "name": "Brandon Williamson",
-          "ip": 29.0,
-          "hr": 5,
-          "bb": 20,
-          "hbp": 3,
-          "so": 19
-        }
-      }
-    },
-    {
-      "time": "WED 09/02 1:05 PM",
-      "code": "ATL @ WSN",
-      "away": {
-        "team": {
-          "name": "Atlanta",
-          "abbr": "ATL",
-          "wins": 82,
-          "losses": 57,
-          "games": 139,
-          "runs_scored": 644.0,
-          "runs_allowed": 535.0,
-          "bullpen_ip": 518.3,
-          "bullpen_er": 201.7,
-          "park_factor": 1.0
-        },
-        "starter": {
-          "name": "Grant Holmes",
-          "ip": 128.7,
-          "hr": 19,
-          "bb": 55,
-          "hbp": 3,
-          "so": 103
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Washington",
-          "abbr": "WSN",
-          "wins": 67,
-          "losses": 74,
-          "games": 141,
-          "runs_scored": 735.0,
-          "runs_allowed": 712.0,
-          "bullpen_ip": 526.3,
-          "bullpen_er": 264.3,
-          "park_factor": 1.01
-        },
-        "starter": {
-          "name": "Brad Lord",
-          "ip": 69.7,
-          "hr": 8,
-          "bb": 28,
-          "hbp": 7,
-          "so": 64
-        }
-      }
-    },
-    {
-      "time": "WED 09/02 2:35 PM",
-      "code": "ATH @ TEX",
-      "away": {
-        "team": {
-          "name": "Athletics",
-          "abbr": "ATH",
-          "wins": 53,
-          "losses": 86,
-          "games": 139,
-          "runs_scored": 602.0,
-          "runs_allowed": 803.0,
-          "bullpen_ip": 516.2,
-          "bullpen_er": 304.9,
-          "park_factor": 1.06
-        },
-        "starter": {
-          "name": "Jacob Lopez",
-          "ip": 99.0,
-          "hr": 15,
-          "bb": 50,
-          "hbp": 4,
-          "so": 96
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Texas",
-          "abbr": "TEX",
-          "wins": 69,
-          "losses": 70,
-          "games": 139,
-          "runs_scored": 570.0,
-          "runs_allowed": 611.0,
-          "bullpen_ip": 510.9,
-          "bullpen_er": 235.1,
-          "park_factor": 1.02
-        },
-        "starter": {
-          "name": "Cody Bradford",
-          "ip": 26.3,
-          "hr": 1,
-          "bb": 6,
-          "hbp": 1,
-          "so": 13
-        }
-      }
-    },
-    {
-      "time": "WED 09/02 3:10 PM",
-      "code": "BAL @ COL",
-      "away": {
-        "team": {
-          "name": "Baltimore",
-          "abbr": "BAL",
-          "wins": 69,
-          "losses": 70,
-          "games": 139,
-          "runs_scored": 630.0,
-          "runs_allowed": 649.0,
-          "bullpen_ip": 519.4,
-          "bullpen_er": 232.9,
-          "park_factor": 1.02
-        },
-        "starter": {
-          "name": "Trevor Rogers",
-          "ip": 137.7,
-          "hr": 16,
-          "bb": 37,
-          "hbp": 3,
-          "so": 121
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Colorado",
-          "abbr": "COL",
-          "wins": 53,
-          "losses": 86,
-          "games": 139,
-          "runs_scored": 649.0,
-          "runs_allowed": 790.0,
-          "bullpen_ip": 512.7,
-          "bullpen_er": 300.6,
-          "park_factor": 1.18
-        },
-        "starter": {
-          "name": "Tomoyuki Sugano",
-          "ip": 125.7,
-          "hr": 27,
-          "bb": 29,
-          "hbp": 3,
-          "so": 75
-        }
-      }
-    },
-    {
-      "time": "WED 09/02 3:40 PM",
-      "code": "PHI @ ARI",
-      "away": {
-        "team": {
-          "name": "Philadelphia",
-          "abbr": "PHI",
-          "wins": 79,
-          "losses": 60,
-          "games": 139,
-          "runs_scored": 631.0,
-          "runs_allowed": 594.0,
-          "bullpen_ip": 518.6,
-          "bullpen_er": 224.1,
-          "park_factor": 1.01
-        },
-        "starter": {
-          "name": "Andrew Painter",
-          "ip": 98.3,
-          "hr": 17,
-          "bb": 37,
-          "hbp": 5,
-          "so": 85
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Arizona",
-          "abbr": "ARI",
-          "wins": 73,
-          "losses": 67,
-          "games": 140,
-          "runs_scored": 627.0,
-          "runs_allowed": 629.0,
-          "bullpen_ip": 521.6,
-          "bullpen_er": 235.6,
-          "park_factor": 1.04
-        },
-        "starter": {
-          "name": "Taylor Clarke",
-          "ip": 62.3,
-          "hr": 6,
-          "bb": 11,
-          "hbp": 3,
-          "so": 37
-        }
-      }
-    },
-    {
-      "time": "WED 09/02 4:10 PM",
-      "code": "SEA @ BOS",
-      "away": {
-        "team": {
-          "name": "Seattle",
-          "abbr": "SEA",
-          "wins": 65,
-          "losses": 74,
-          "games": 139,
-          "runs_scored": 547.0,
-          "runs_allowed": 617.0,
-          "bullpen_ip": 515.1,
-          "bullpen_er": 232.6,
-          "park_factor": 0.94
-        },
-        "starter": {
-          "name": "Bryce Miller",
-          "ip": 94.0,
-          "hr": 17,
-          "bb": 25,
-          "hbp": 1,
-          "so": 92
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Boston",
-          "abbr": "BOS",
-          "wins": 75,
-          "losses": 64,
-          "games": 139,
-          "runs_scored": 624.0,
-          "runs_allowed": 542.0,
-          "bullpen_ip": 519.3,
-          "bullpen_er": 203.7,
-          "park_factor": 1.05
-        },
-        "starter": {
-          "name": "Patrick Sandoval",
-          "ip": 45.0,
-          "hr": 6,
-          "bb": 22,
-          "hbp": 1,
-          "so": 48
-        }
-      }
-    },
-    {
-      "time": "WED 09/02 6:40 PM",
+      "time": "THU 09/03 12:35 PM",
       "code": "SFG @ PIT",
       "away": {
         "team": {
           "name": "San Francisco",
           "abbr": "SFG",
-          "wins": 57,
+          "wins": 58,
           "losses": 82,
-          "games": 139,
-          "runs_scored": 579.0,
-          "runs_allowed": 650.0,
-          "bullpen_ip": 514.5,
-          "bullpen_er": 243.4,
+          "games": 140,
+          "runs_scored": 584.0,
+          "runs_allowed": 654.0,
+          "bullpen_ip": 518.7,
+          "bullpen_er": 244.9,
           "park_factor": 0.94
         },
         "starter": {
-          "name": "Landen Roupp",
-          "ip": 139.7,
-          "hr": 11,
-          "bb": 66,
-          "hbp": 5,
-          "so": 133
+          "name": "Blade Tidwell",
+          "ip": 37.7,
+          "hr": 5,
+          "bb": 13,
+          "hbp": 2,
+          "so": 31
         }
       },
       "home": {
@@ -321,95 +33,47 @@
           "name": "Pittsburgh",
           "abbr": "PIT",
           "wins": 68,
-          "losses": 71,
-          "games": 139,
-          "runs_scored": 682.0,
-          "runs_allowed": 655.0,
-          "bullpen_ip": 520.9,
-          "bullpen_er": 238.1,
+          "losses": 72,
+          "games": 140,
+          "runs_scored": 686.0,
+          "runs_allowed": 660.0,
+          "bullpen_ip": 525.6,
+          "bullpen_er": 240.2,
           "park_factor": 0.97
         },
         "starter": {
-          "name": "Bubba Chandler",
-          "ip": 131.0,
-          "hr": 11,
-          "bb": 68,
-          "hbp": 6,
-          "so": 117
-        }
-      }
-    },
-    {
-      "time": "WED 09/02 6:40 PM",
-      "code": "NYM @ TBR",
-      "away": {
-        "team": {
-          "name": "New York",
-          "abbr": "NYM",
-          "wins": 62,
-          "losses": 77,
-          "games": 139,
-          "runs_scored": 567.0,
-          "runs_allowed": 623.0,
-          "bullpen_ip": 519.8,
-          "bullpen_er": 229.1,
-          "park_factor": 0.98
-        },
-        "starter": {
-          "name": "Justin Hagenman",
-          "ip": 0.0,
-          "hr": 0,
-          "bb": 0,
-          "hbp": 0,
-          "so": 0
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Tampa Bay",
-          "abbr": "TBR",
-          "wins": 83,
-          "losses": 55,
-          "games": 138,
-          "runs_scored": 624.0,
-          "runs_allowed": 567.0,
-          "bullpen_ip": 517.9,
-          "bullpen_er": 209.3,
-          "park_factor": 0.97
-        },
-        "starter": {
-          "name": "Griffin Jax",
-          "ip": 91.7,
-          "hr": 14,
+          "name": "Lake Bachar",
+          "ip": 76.0,
+          "hr": 13,
           "bb": 30,
-          "hbp": 2,
-          "so": 100
+          "hbp": 4,
+          "so": 79
         }
       }
     },
     {
-      "time": "WED 09/02 6:40 PM",
+      "time": "THU 09/03 1:10 PM",
       "code": "TOR @ CLE",
       "away": {
         "team": {
           "name": "Toronto",
           "abbr": "TOR",
-          "wins": 68,
+          "wins": 69,
           "losses": 71,
-          "games": 139,
-          "runs_scored": 549.0,
+          "games": 140,
+          "runs_scored": 560.0,
           "runs_allowed": 604.0,
-          "bullpen_ip": 519.3,
-          "bullpen_er": 221.6,
+          "bullpen_ip": 523.0,
+          "bullpen_er": 221.5,
           "park_factor": 1.01
         },
         "starter": {
-          "name": "Dylan Cease",
-          "ip": 150.3,
-          "hr": 10,
-          "bb": 65,
-          "hbp": 3,
-          "so": 217
+          "name": "Jos\u00e9 Soriano",
+          "ip": 151.3,
+          "hr": 14,
+          "bb": 67,
+          "hbp": 6,
+          "so": 149
         }
       },
       "home": {
@@ -417,143 +81,143 @@
           "name": "Cleveland",
           "abbr": "CLE",
           "wins": 70,
-          "losses": 68,
-          "games": 138,
+          "losses": 69,
+          "games": 139,
           "runs_scored": 563.0,
-          "runs_allowed": 560.0,
-          "bullpen_ip": 514.4,
-          "bullpen_er": 205.1,
+          "runs_allowed": 571.0,
+          "bullpen_ip": 518.1,
+          "bullpen_er": 207.7,
           "park_factor": 0.98
         },
         "starter": {
-          "name": "Joey Cantillo",
-          "ip": 136.3,
-          "hr": 15,
-          "bb": 70,
-          "hbp": 3,
-          "so": 145
+          "name": "Tanner Bibee",
+          "ip": 162.3,
+          "hr": 26,
+          "bb": 46,
+          "hbp": 6,
+          "so": 128
         }
       }
     },
     {
-      "time": "WED 09/02 7:40 PM",
-      "code": "DET @ MIN",
+      "time": "THU 09/03 2:10 PM",
+      "code": "CHW @ HOU",
       "away": {
         "team": {
-          "name": "Detroit",
-          "abbr": "DET",
-          "wins": 63,
-          "losses": 75,
-          "games": 138,
-          "runs_scored": 599.0,
-          "runs_allowed": 557.0,
-          "bullpen_ip": 512.1,
-          "bullpen_er": 204.8,
+          "name": "Chicago",
+          "abbr": "CHW",
+          "wins": 73,
+          "losses": 66,
+          "games": 139,
+          "runs_scored": 660.0,
+          "runs_allowed": 617.0,
+          "bullpen_ip": 520.4,
+          "bullpen_er": 231.6,
+          "park_factor": 1.02
+        },
+        "starter": {
+          "name": "Luis Castillo",
+          "ip": 122.0,
+          "hr": 23,
+          "bb": 38,
+          "hbp": 6,
+          "so": 106
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Houston",
+          "abbr": "HOU",
+          "wins": 71,
+          "losses": 69,
+          "games": 140,
+          "runs_scored": 633.0,
+          "runs_allowed": 675.0,
+          "bullpen_ip": 521.8,
+          "bullpen_er": 257.6,
           "park_factor": 0.99
         },
         "starter": {
-          "name": "Drew Anderson",
-          "ip": 86.0,
-          "hr": 13,
-          "bb": 35,
+          "name": "Hunter Brown",
+          "ip": 81.0,
+          "hr": 10,
+          "bb": 44,
           "hbp": 4,
-          "so": 96
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Minnesota",
-          "abbr": "MIN",
-          "wins": 67,
-          "losses": 72,
-          "games": 139,
-          "runs_scored": 652.0,
-          "runs_allowed": 685.0,
-          "bullpen_ip": 514.4,
-          "bullpen_er": 255.6,
-          "park_factor": 1.0
-        },
-        "starter": {
-          "name": "Dean Kremer",
-          "ip": 62.7,
-          "hr": 15,
-          "bb": 22,
-          "hbp": 0,
-          "so": 61
+          "so": 86
         }
       }
     },
     {
-      "time": "WED 09/02 7:40 PM",
-      "code": "MIA @ KCR",
+      "time": "THU 09/03 7:15 PM",
+      "code": "BOS @ BAL",
       "away": {
         "team": {
-          "name": "Miami",
-          "abbr": "MIA",
-          "wins": 70,
-          "losses": 69,
-          "games": 139,
-          "runs_scored": 603.0,
-          "runs_allowed": 588.0,
-          "bullpen_ip": 512.7,
-          "bullpen_er": 216.6,
-          "park_factor": 0.96
+          "name": "Boston",
+          "abbr": "BOS",
+          "wins": 75,
+          "losses": 65,
+          "games": 140,
+          "runs_scored": 627.0,
+          "runs_allowed": 550.0,
+          "bullpen_ip": 523.0,
+          "bullpen_er": 206.3,
+          "park_factor": 1.05
         },
         "starter": {
-          "name": "Eury P\u00e9rez",
-          "ip": 130.7,
-          "hr": 14,
-          "bb": 56,
-          "hbp": 8,
-          "so": 142
+          "name": "Jake Bennett",
+          "ip": 93.7,
+          "hr": 7,
+          "bb": 18,
+          "hbp": 3,
+          "so": 74
         }
       },
       "home": {
         "team": {
-          "name": "Kansas City",
-          "abbr": "KCR",
-          "wins": 62,
-          "losses": 77,
-          "games": 139,
-          "runs_scored": 593.0,
-          "runs_allowed": 679.0,
-          "bullpen_ip": 513.0,
-          "bullpen_er": 259.3,
-          "park_factor": 1.01
+          "name": "Baltimore",
+          "abbr": "BAL",
+          "wins": 69,
+          "losses": 71,
+          "games": 140,
+          "runs_scored": 635.0,
+          "runs_allowed": 655.0,
+          "bullpen_ip": 523.9,
+          "bullpen_er": 234.9,
+          "park_factor": 1.02
         },
         "starter": {
-          "name": "Noah Cameron",
-          "ip": 149.3,
-          "hr": 15,
-          "bb": 48,
-          "hbp": 3,
-          "so": 131
+          "name": "Brandon Young",
+          "ip": 130.3,
+          "hr": 17,
+          "bb": 46,
+          "hbp": 2,
+          "so": 103
         }
       }
     },
     {
-      "time": "WED 09/02 7:40 PM",
+      "time": "THU 09/03 7:15 PM",
       "code": "MIL @ CHC",
       "away": {
         "team": {
           "name": "Milwaukee",
           "abbr": "MIL",
-          "wins": 86,
+          "wins": 87,
           "losses": 53,
-          "games": 139,
-          "runs_scored": 695.0,
-          "runs_allowed": 527.0,
-          "bullpen_ip": 521.9,
-          "bullpen_er": 195.2,
+          "games": 140,
+          "runs_scored": 704.0,
+          "runs_allowed": 532.0,
+          "bullpen_ip": 525.7,
+          "bullpen_er": 197.2,
           "park_factor": 1.0
         },
         "starter": {
-          "name": "Jacob Misiorowski",
-          "ip": 151.0,
-          "hr": 13,
-          "bb": 35,
-          "hbp": 9,
-          "so": 222
+          "name": "Logan Henderson",
+          "ip": 76.3,
+          "hr": 11,
+          "bb": 14,
+          "hbp": 1,
+          "so": 86
         }
       },
       "home": {
@@ -561,143 +225,191 @@
           "name": "Chicago",
           "abbr": "CHC",
           "wins": 78,
-          "losses": 61,
-          "games": 139,
-          "runs_scored": 746.0,
-          "runs_allowed": 610.0,
-          "bullpen_ip": 521.9,
-          "bullpen_er": 234.6,
+          "losses": 62,
+          "games": 140,
+          "runs_scored": 751.0,
+          "runs_allowed": 619.0,
+          "bullpen_ip": 525.7,
+          "bullpen_er": 238.5,
           "park_factor": 1.03
         },
         "starter": {
-          "name": "David Peterson",
-          "ip": 123.3,
-          "hr": 13,
-          "bb": 52,
-          "hbp": 4,
-          "so": 109
-        }
-      }
-    },
-    {
-      "time": "WED 09/02 8:10 PM",
-      "code": "CHW @ HOU",
-      "away": {
-        "team": {
-          "name": "Chicago",
-          "abbr": "CHW",
-          "wins": 73,
-          "losses": 65,
-          "games": 138,
-          "runs_scored": 660.0,
-          "runs_allowed": 615.0,
-          "bullpen_ip": 517.0,
-          "bullpen_er": 230.7,
-          "park_factor": 1.02
-        },
-        "starter": {
-          "name": "Davis Martin",
-          "ip": 125.0,
-          "hr": 12,
-          "bb": 39,
-          "hbp": 9,
-          "so": 111
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Houston",
-          "abbr": "HOU",
-          "wins": 70,
-          "losses": 69,
-          "games": 139,
-          "runs_scored": 631.0,
-          "runs_allowed": 675.0,
-          "bullpen_ip": 518.0,
-          "bullpen_er": 257.4,
-          "park_factor": 0.99
-        },
-        "starter": {
-          "name": "Hayden Wesneski",
-          "ip": 32.7,
-          "hr": 2,
-          "bb": 12,
+          "name": "Kevin Gausman",
+          "ip": 155.3,
+          "hr": 20,
+          "bb": 43,
           "hbp": 1,
-          "so": 28
+          "so": 156
         }
       }
     },
     {
-      "time": "WED 09/02 9:38 PM",
-      "code": "NYY @ LAA",
+      "time": "THU 09/03 7:40 PM",
+      "code": "MIA @ KCR",
       "away": {
         "team": {
-          "name": "New York",
-          "abbr": "NYY",
-          "wins": 79,
-          "losses": 60,
-          "games": 139,
-          "runs_scored": 630.0,
-          "runs_allowed": 518.0,
-          "bullpen_ip": 521.5,
-          "bullpen_er": 182.7,
-          "park_factor": 1.03
+          "name": "Miami",
+          "abbr": "MIA",
+          "wins": 71,
+          "losses": 69,
+          "games": 140,
+          "runs_scored": 612.0,
+          "runs_allowed": 594.0,
+          "bullpen_ip": 516.5,
+          "bullpen_er": 218.8,
+          "park_factor": 0.96
         },
         "starter": {
-          "name": "Cam Schlittler",
-          "ip": 163.7,
-          "hr": 14,
-          "bb": 42,
-          "hbp": 6,
-          "so": 201
+          "name": "Sandy Alcantara",
+          "ip": 189.7,
+          "hr": 18,
+          "bb": 50,
+          "hbp": 7,
+          "so": 140
         }
       },
       "home": {
         "team": {
-          "name": "Los Angeles",
-          "abbr": "LAA",
-          "wins": 53,
-          "losses": 86,
-          "games": 139,
-          "runs_scored": 568.0,
-          "runs_allowed": 645.0,
-          "bullpen_ip": 515.8,
-          "bullpen_er": 237.4,
+          "name": "Kansas City",
+          "abbr": "KCR",
+          "wins": 62,
+          "losses": 78,
+          "games": 140,
+          "runs_scored": 599.0,
+          "runs_allowed": 688.0,
+          "bullpen_ip": 516.7,
+          "bullpen_er": 262.9,
           "park_factor": 1.01
         },
         "starter": {
-          "name": "Reid Detmers",
-          "ip": 155.0,
-          "hr": 17,
-          "bb": 44,
-          "hbp": 4,
-          "so": 174
+          "name": "Michael Wacha",
+          "ip": 170.7,
+          "hr": 22,
+          "bb": 42,
+          "hbp": 6,
+          "so": 136
         }
       }
     },
     {
-      "time": "WED 09/02 10:10 PM",
+      "time": "THU 09/03 8:05 PM",
+      "code": "TBR @ TEX",
+      "away": {
+        "team": {
+          "name": "Tampa Bay",
+          "abbr": "TBR",
+          "wins": 83,
+          "losses": 56,
+          "games": 139,
+          "runs_scored": 628.0,
+          "runs_allowed": 577.0,
+          "bullpen_ip": 521.6,
+          "bullpen_er": 212.5,
+          "park_factor": 0.97
+        },
+        "starter": {
+          "name": "Shane McClanahan",
+          "ip": 113.0,
+          "hr": 9,
+          "bb": 38,
+          "hbp": 4,
+          "so": 103
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Texas",
+          "abbr": "TEX",
+          "wins": 69,
+          "losses": 71,
+          "games": 140,
+          "runs_scored": 572.0,
+          "runs_allowed": 620.0,
+          "bullpen_ip": 514.6,
+          "bullpen_er": 238.5,
+          "park_factor": 1.02
+        },
+        "starter": {
+          "name": "Cal Quantrill",
+          "ip": 89.7,
+          "hr": 11,
+          "bb": 22,
+          "hbp": 5,
+          "so": 68
+        }
+      }
+    },
+    {
+      "time": "THU 09/03 9:40 PM",
+      "code": "ATH @ SEA",
+      "away": {
+        "team": {
+          "name": "Athletics",
+          "abbr": "ATH",
+          "wins": 54,
+          "losses": 86,
+          "games": 140,
+          "runs_scored": 611.0,
+          "runs_allowed": 805.0,
+          "bullpen_ip": 520.0,
+          "bullpen_er": 305.4,
+          "park_factor": 1.06
+        },
+        "starter": {
+          "name": "Jack Perkins",
+          "ip": 95.3,
+          "hr": 18,
+          "bb": 42,
+          "hbp": 9,
+          "so": 109
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Seattle",
+          "abbr": "SEA",
+          "wins": 66,
+          "losses": 74,
+          "games": 140,
+          "runs_scored": 555.0,
+          "runs_allowed": 620.0,
+          "bullpen_ip": 518.8,
+          "bullpen_er": 233.7,
+          "park_factor": 0.94
+        },
+        "starter": {
+          "name": "Kade Anderson",
+          "ip": 10.0,
+          "hr": 2,
+          "bb": 5,
+          "hbp": 0,
+          "so": 8
+        }
+      }
+    },
+    {
+      "time": "THU 09/03 10:10 PM",
       "code": "STL @ LAD",
       "away": {
         "team": {
           "name": "St. Louis",
           "abbr": "STL",
-          "wins": 69,
+          "wins": 70,
           "losses": 70,
-          "games": 139,
-          "runs_scored": 623.0,
-          "runs_allowed": 633.0,
-          "bullpen_ip": 520.4,
-          "bullpen_er": 237.8,
+          "games": 140,
+          "runs_scored": 631.0,
+          "runs_allowed": 639.0,
+          "bullpen_ip": 524.6,
+          "bullpen_er": 239.7,
           "park_factor": 0.99
         },
         "starter": {
-          "name": "TBD",
-          "ip": 0.0,
-          "hr": 0,
-          "bb": 0,
-          "hbp": 0,
-          "so": 0
+          "name": "Quinn Mathews",
+          "ip": 19.7,
+          "hr": 1,
+          "bb": 8,
+          "hbp": 1,
+          "so": 20
         }
       },
       "home": {
@@ -705,20 +417,20 @@
           "name": "Los Angeles",
           "abbr": "LAD",
           "wins": 82,
-          "losses": 56,
-          "games": 138,
-          "runs_scored": 678.0,
-          "runs_allowed": 530.0,
-          "bullpen_ip": 512.7,
-          "bullpen_er": 203.9,
+          "losses": 57,
+          "games": 139,
+          "runs_scored": 684.0,
+          "runs_allowed": 538.0,
+          "bullpen_ip": 516.9,
+          "bullpen_er": 206.7,
           "park_factor": 1.0
         },
         "starter": {
-          "name": "Yoshinobu Yamamoto",
-          "ip": 158.0,
-          "hr": 16,
-          "bb": 36,
-          "hbp": 6,
+          "name": "Tarik Skubal",
+          "ip": 126.7,
+          "hr": 12,
+          "bb": 21,
+          "hbp": 5,
           "so": 153
         }
       }

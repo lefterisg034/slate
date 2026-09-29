@@ -1,5 +1,199 @@
 {
-  "date": "2026-09-28",
-  "source": "statsapi.mlb.com",
-  "games": []
+  "date": "2026-09-29",
+  "source": "statsapi.mlb.com + the-odds-api.com",
+  "has_odds": false,
+  "games": [
+    {
+      "time": "TUE 09/29 2:00 PM",
+      "code": "PHI @ ATL",
+      "away": {
+        "team": {
+          "name": "Philadelphia",
+          "abbr": "PHI",
+          "wins": 88,
+          "losses": 74,
+          "games": 162,
+          "runs_scored": 713.0,
+          "runs_allowed": 698.0,
+          "bullpen_ip": 604.1,
+          "bullpen_er": 263.0,
+          "park_factor": 1.01
+        },
+        "starter": {
+          "name": "Jes\u00fas Luzardo",
+          "ip": 179.7,
+          "hr": 15,
+          "bb": 52,
+          "hbp": 11,
+          "so": 221
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Atlanta",
+          "abbr": "ATL",
+          "wins": 94,
+          "losses": 68,
+          "games": 162,
+          "runs_scored": 742.0,
+          "runs_allowed": 626.0,
+          "bullpen_ip": 604.0,
+          "bullpen_er": 236.3,
+          "park_factor": 1.0
+        },
+        "starter": {
+          "name": "Chris Sale",
+          "ip": 162.7,
+          "hr": 10,
+          "bb": 31,
+          "hbp": 15,
+          "so": 200
+        }
+      }
+    },
+    {
+      "time": "TUE 09/29 5:00 PM",
+      "code": "CHW @ HOU",
+      "away": {
+        "team": {
+          "name": "Chicago",
+          "abbr": "CHW",
+          "wins": 84,
+          "losses": 78,
+          "games": 162,
+          "runs_scored": 776.0,
+          "runs_allowed": 720.0,
+          "bullpen_ip": 605.1,
+          "bullpen_er": 268.7,
+          "park_factor": 1.02
+        },
+        "starter": {
+          "name": "Hagen Smith",
+          "ip": 28.0,
+          "hr": 1,
+          "bb": 16,
+          "hbp": 0,
+          "so": 41
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Houston",
+          "abbr": "HOU",
+          "wins": 81,
+          "losses": 81,
+          "games": 162,
+          "runs_scored": 734.0,
+          "runs_allowed": 766.0,
+          "bullpen_ip": 603.5,
+          "bullpen_er": 289.5,
+          "park_factor": 0.99
+        },
+        "starter": {
+          "name": "AJ Blubaugh",
+          "ip": 96.0,
+          "hr": 13,
+          "bb": 42,
+          "hbp": 3,
+          "so": 94
+        }
+      }
+    },
+    {
+      "time": "TUE 09/29 8:00 PM",
+      "code": "BOS @ NYY",
+      "away": {
+        "team": {
+          "name": "Boston",
+          "abbr": "BOS",
+          "wins": 87,
+          "losses": 75,
+          "games": 162,
+          "runs_scored": 689.0,
+          "runs_allowed": 611.0,
+          "bullpen_ip": 604.8,
+          "bullpen_er": 230.8,
+          "park_factor": 1.05
+        },
+        "starter": {
+          "name": "Payton Tolle",
+          "ip": 148.7,
+          "hr": 15,
+          "bb": 40,
+          "hbp": 6,
+          "so": 171
+        }
+      },
+      "home": {
+        "team": {
+          "name": "New York",
+          "abbr": "NYY",
+          "wins": 93,
+          "losses": 68,
+          "games": 161,
+          "runs_scored": 739.0,
+          "runs_allowed": 601.0,
+          "bullpen_ip": 605.4,
+          "bullpen_er": 211.4,
+          "park_factor": 1.03
+        },
+        "starter": {
+          "name": "Cam Schlittler",
+          "ip": 193.7,
+          "hr": 16,
+          "bb": 49,
+          "hbp": 6,
+          "so": 239
+        }
+      }
+    },
+    {
+      "time": "TUE 09/29 10:00 PM",
+      "code": "CHC @ SDP",
+      "away": {
+        "team": {
+          "name": "Chicago",
+          "abbr": "CHC",
+          "wins": 89,
+          "losses": 73,
+          "games": 162,
+          "runs_scored": 850.0,
+          "runs_allowed": 703.0,
+          "bullpen_ip": 607.7,
+          "bullpen_er": 269.9,
+          "park_factor": 1.03
+        },
+        "starter": {
+          "name": "Matthew Boyd",
+          "ip": 126.7,
+          "hr": 15,
+          "bb": 39,
+          "hbp": 7,
+          "so": 96
+        }
+      },
+      "home": {
+        "team": {
+          "name": "San Diego",
+          "abbr": "SDP",
+          "wins": 91,
+          "losses": 71,
+          "games": 162,
+          "runs_scored": 722.0,
+          "runs_allowed": 681.0,
+          "bullpen_ip": 603.3,
+          "bullpen_er": 259.4,
+          "park_factor": 0.95
+        },
+        "starter": {
+          "name": "Michael King",
+          "ip": 185.0,
+          "hr": 20,
+          "bb": 70,
+          "hbp": 13,
+          "so": 159
+        }
+      }
+    }
+  ]
 }

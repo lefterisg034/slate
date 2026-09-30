@@ -1,10 +1,10 @@
 {
-  "date": "2026-09-29",
+  "date": "2026-09-30",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "TUE 09/29 2:00 PM",
+      "time": "WED 09/30 2:00 PM",
       "code": "PHI @ ATL",
       "away": {
         "team": {
@@ -20,12 +20,12 @@
           "park_factor": 1.01
         },
         "starter": {
-          "name": "Jes\u00fas Luzardo",
-          "ip": 179.7,
-          "hr": 15,
-          "bb": 52,
-          "hbp": 11,
-          "so": 221
+          "name": "Cristopher S\u00e1nchez",
+          "ip": 207.0,
+          "hr": 19,
+          "bb": 45,
+          "hbp": 6,
+          "so": 231
         }
       },
       "home": {
@@ -42,17 +42,17 @@
           "park_factor": 1.0
         },
         "starter": {
-          "name": "Chris Sale",
-          "ip": 162.7,
-          "hr": 10,
-          "bb": 31,
-          "hbp": 15,
-          "so": 200
+          "name": "Tyler Mahle",
+          "ip": 149.0,
+          "hr": 20,
+          "bb": 46,
+          "hbp": 3,
+          "so": 137
         }
       }
     },
     {
-      "time": "TUE 09/29 5:00 PM",
+      "time": "WED 09/30 5:00 PM",
       "code": "CHW @ HOU",
       "away": {
         "team": {
@@ -68,12 +68,12 @@
           "park_factor": 1.02
         },
         "starter": {
-          "name": "Hagen Smith",
-          "ip": 28.0,
-          "hr": 1,
-          "bb": 16,
-          "hbp": 0,
-          "so": 41
+          "name": "Sean Burke",
+          "ip": 172.3,
+          "hr": 19,
+          "bb": 62,
+          "hbp": 9,
+          "so": 185
         }
       },
       "home": {
@@ -90,17 +90,17 @@
           "park_factor": 0.99
         },
         "starter": {
-          "name": "AJ Blubaugh",
-          "ip": 96.0,
-          "hr": 13,
-          "bb": 42,
-          "hbp": 3,
-          "so": 94
+          "name": "Hunter Brown",
+          "ip": 107.3,
+          "hr": 11,
+          "bb": 55,
+          "hbp": 4,
+          "so": 124
         }
       }
     },
     {
-      "time": "TUE 09/29 8:00 PM",
+      "time": "WED 09/30 8:00 PM",
       "code": "BOS @ NYY",
       "away": {
         "team": {
@@ -116,12 +116,12 @@
           "park_factor": 1.05
         },
         "starter": {
-          "name": "Payton Tolle",
-          "ip": 148.7,
-          "hr": 15,
-          "bb": 40,
-          "hbp": 6,
-          "so": 171
+          "name": "Sonny Gray",
+          "ip": 169.0,
+          "hr": 16,
+          "bb": 46,
+          "hbp": 5,
+          "so": 149
         }
       },
       "home": {
@@ -138,17 +138,17 @@
           "park_factor": 1.03
         },
         "starter": {
-          "name": "Cam Schlittler",
-          "ip": 193.7,
-          "hr": 16,
-          "bb": 49,
-          "hbp": 6,
-          "so": 239
+          "name": "Max Fried",
+          "ip": 112.7,
+          "hr": 4,
+          "bb": 33,
+          "hbp": 2,
+          "so": 104
         }
       }
     },
     {
-      "time": "TUE 09/29 10:00 PM",
+      "time": "WED 09/30 10:00 PM",
       "code": "CHC @ SDP",
       "away": {
         "team": {
@@ -164,12 +164,12 @@
           "park_factor": 1.03
         },
         "starter": {
-          "name": "Matthew Boyd",
-          "ip": 126.7,
-          "hr": 15,
-          "bb": 39,
-          "hbp": 7,
-          "so": 96
+          "name": "Kevin Gausman",
+          "ip": 177.7,
+          "hr": 26,
+          "bb": 47,
+          "hbp": 1,
+          "so": 184
         }
       },
       "home": {
@@ -186,12 +186,12 @@
           "park_factor": 0.95
         },
         "starter": {
-          "name": "Michael King",
-          "ip": 185.0,
-          "hr": 20,
-          "bb": 70,
-          "hbp": 13,
-          "so": 159
+          "name": "Nick Pivetta",
+          "ip": 34.7,
+          "hr": 2,
+          "bb": 8,
+          "hbp": 1,
+          "so": 42
         }
       }
     }

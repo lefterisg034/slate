@@ -1,10 +1,10 @@
 {
-  "date": "2026-09-30",
+  "date": "2026-10-01",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "WED 09/30 2:00 PM",
+      "time": "THU 10/01 8:00 PM",
       "code": "PHI @ ATL",
       "away": {
         "team": {
@@ -20,12 +20,12 @@
           "park_factor": 1.01
         },
         "starter": {
-          "name": "Cristopher S\u00e1nchez",
-          "ip": 207.0,
-          "hr": 19,
-          "bb": 45,
-          "hbp": 6,
-          "so": 231
+          "name": "Aaron Nola",
+          "ip": 175.3,
+          "hr": 37,
+          "bb": 59,
+          "hbp": 2,
+          "so": 177
         }
       },
       "home": {
@@ -42,156 +42,12 @@
           "park_factor": 1.0
         },
         "starter": {
-          "name": "Tyler Mahle",
-          "ip": 149.0,
-          "hr": 20,
-          "bb": 46,
-          "hbp": 3,
-          "so": 137
-        }
-      }
-    },
-    {
-      "time": "WED 09/30 5:00 PM",
-      "code": "CHW @ HOU",
-      "away": {
-        "team": {
-          "name": "Chicago",
-          "abbr": "CHW",
-          "wins": 84,
-          "losses": 78,
-          "games": 162,
-          "runs_scored": 776.0,
-          "runs_allowed": 720.0,
-          "bullpen_ip": 605.1,
-          "bullpen_er": 268.7,
-          "park_factor": 1.02
-        },
-        "starter": {
-          "name": "Sean Burke",
-          "ip": 172.3,
-          "hr": 19,
-          "bb": 62,
-          "hbp": 9,
-          "so": 185
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Houston",
-          "abbr": "HOU",
-          "wins": 81,
-          "losses": 81,
-          "games": 162,
-          "runs_scored": 734.0,
-          "runs_allowed": 766.0,
-          "bullpen_ip": 603.5,
-          "bullpen_er": 289.5,
-          "park_factor": 0.99
-        },
-        "starter": {
-          "name": "Hunter Brown",
-          "ip": 107.3,
-          "hr": 11,
-          "bb": 55,
-          "hbp": 4,
-          "so": 124
-        }
-      }
-    },
-    {
-      "time": "WED 09/30 8:00 PM",
-      "code": "BOS @ NYY",
-      "away": {
-        "team": {
-          "name": "Boston",
-          "abbr": "BOS",
-          "wins": 87,
-          "losses": 75,
-          "games": 162,
-          "runs_scored": 689.0,
-          "runs_allowed": 611.0,
-          "bullpen_ip": 604.8,
-          "bullpen_er": 230.8,
-          "park_factor": 1.05
-        },
-        "starter": {
-          "name": "Sonny Gray",
-          "ip": 169.0,
-          "hr": 16,
-          "bb": 46,
-          "hbp": 5,
-          "so": 149
-        }
-      },
-      "home": {
-        "team": {
-          "name": "New York",
-          "abbr": "NYY",
-          "wins": 93,
-          "losses": 68,
-          "games": 161,
-          "runs_scored": 739.0,
-          "runs_allowed": 601.0,
-          "bullpen_ip": 605.4,
-          "bullpen_er": 211.4,
-          "park_factor": 1.03
-        },
-        "starter": {
-          "name": "Max Fried",
-          "ip": 112.7,
-          "hr": 4,
-          "bb": 33,
-          "hbp": 2,
-          "so": 104
-        }
-      }
-    },
-    {
-      "time": "WED 09/30 10:00 PM",
-      "code": "CHC @ SDP",
-      "away": {
-        "team": {
-          "name": "Chicago",
-          "abbr": "CHC",
-          "wins": 89,
-          "losses": 73,
-          "games": 162,
-          "runs_scored": 850.0,
-          "runs_allowed": 703.0,
-          "bullpen_ip": 607.7,
-          "bullpen_er": 269.9,
-          "park_factor": 1.03
-        },
-        "starter": {
-          "name": "Kevin Gausman",
-          "ip": 177.7,
-          "hr": 26,
-          "bb": 47,
-          "hbp": 1,
-          "so": 184
-        }
-      },
-      "home": {
-        "team": {
-          "name": "San Diego",
-          "abbr": "SDP",
-          "wins": 91,
-          "losses": 71,
-          "games": 162,
-          "runs_scored": 722.0,
-          "runs_allowed": 681.0,
-          "bullpen_ip": 603.3,
-          "bullpen_er": 259.4,
-          "park_factor": 0.95
-        },
-        "starter": {
-          "name": "Nick Pivetta",
-          "ip": 34.7,
+          "name": "Ray Kerr",
+          "ip": 18.3,
           "hr": 2,
-          "bb": 8,
-          "hbp": 1,
-          "so": 42
+          "bb": 2,
+          "hbp": 2,
+          "so": 11
         }
       }
     }

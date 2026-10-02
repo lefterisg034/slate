@@ -1,55 +1,5 @@
 {
-  "date": "2026-10-01",
-  "source": "statsapi.mlb.com + the-odds-api.com",
-  "has_odds": false,
-  "games": [
-    {
-      "time": "THU 10/01 8:00 PM",
-      "code": "PHI @ ATL",
-      "away": {
-        "team": {
-          "name": "Philadelphia",
-          "abbr": "PHI",
-          "wins": 88,
-          "losses": 74,
-          "games": 162,
-          "runs_scored": 713.0,
-          "runs_allowed": 698.0,
-          "bullpen_ip": 604.1,
-          "bullpen_er": 263.0,
-          "park_factor": 1.01
-        },
-        "starter": {
-          "name": "Aaron Nola",
-          "ip": 175.3,
-          "hr": 37,
-          "bb": 59,
-          "hbp": 2,
-          "so": 177
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Atlanta",
-          "abbr": "ATL",
-          "wins": 94,
-          "losses": 68,
-          "games": 162,
-          "runs_scored": 742.0,
-          "runs_allowed": 626.0,
-          "bullpen_ip": 604.0,
-          "bullpen_er": 236.3,
-          "park_factor": 1.0
-        },
-        "starter": {
-          "name": "Ray Kerr",
-          "ip": 18.3,
-          "hr": 2,
-          "bb": 2,
-          "hbp": 2,
-          "so": 11
-        }
-      }
-    }
-  ]
+  "date": "2026-10-02",
+  "source": "statsapi.mlb.com",
+  "games": []
 }

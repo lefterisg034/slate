@@ -1,58 +1,58 @@
 {
-  "date": "2026-10-03",
+  "date": "2026-10-04",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "SAT 10/03 1:00 PM",
-      "code": "CHW @ CLE",
+      "time": "SUN 10/04 4:00 PM",
+      "code": "SDP @ MIL",
       "away": {
         "team": {
-          "name": "Chicago",
-          "abbr": "CHW",
-          "wins": 84,
-          "losses": 78,
+          "name": "San Diego",
+          "abbr": "SDP",
+          "wins": 91,
+          "losses": 71,
           "games": 162,
-          "runs_scored": 776.0,
-          "runs_allowed": 720.0,
-          "bullpen_ip": 605.1,
-          "bullpen_er": 268.7,
-          "park_factor": 1.02
+          "runs_scored": 722.0,
+          "runs_allowed": 681.0,
+          "bullpen_ip": 603.3,
+          "bullpen_er": 259.4,
+          "park_factor": 0.95
         },
         "starter": {
-          "name": "Hagen Smith",
-          "ip": 28.0,
-          "hr": 1,
-          "bb": 16,
-          "hbp": 0,
-          "so": 41
+          "name": "Michael King",
+          "ip": 185.0,
+          "hr": 20,
+          "bb": 70,
+          "hbp": 13,
+          "so": 159
         }
       },
       "home": {
         "team": {
-          "name": "Cleveland",
-          "abbr": "CLE",
-          "wins": 85,
-          "losses": 77,
+          "name": "Milwaukee",
+          "abbr": "MIL",
+          "wins": 103,
+          "losses": 59,
           "games": 162,
-          "runs_scored": 678.0,
-          "runs_allowed": 667.0,
-          "bullpen_ip": 603.8,
-          "bullpen_er": 245.3,
-          "park_factor": 0.98
+          "runs_scored": 832.0,
+          "runs_allowed": 618.0,
+          "bullpen_ip": 607.6,
+          "bullpen_er": 229.9,
+          "park_factor": 1.0
         },
         "starter": {
-          "name": "Parker Messick",
-          "ip": 186.3,
-          "hr": 17,
-          "bb": 49,
-          "hbp": 4,
-          "so": 193
+          "name": "Logan Henderson",
+          "ip": 98.3,
+          "hr": 14,
+          "bb": 19,
+          "hbp": 1,
+          "so": 110
         }
       }
     },
     {
-      "time": "SAT 10/03 4:00 PM",
+      "time": "SUN 10/04 8:00 PM",
       "code": "ATL @ LAD",
       "away": {
         "team": {
@@ -90,108 +90,12 @@
           "park_factor": 1.0
         },
         "starter": {
-          "name": "Tarik Skubal",
-          "ip": 158.7,
-          "hr": 14,
-          "bb": 27,
-          "hbp": 5,
-          "so": 186
-        }
-      }
-    },
-    {
-      "time": "SAT 10/03 6:30 PM",
-      "code": "NYY @ TBR",
-      "away": {
-        "team": {
-          "name": "New York",
-          "abbr": "NYY",
-          "wins": 93,
-          "losses": 68,
-          "games": 161,
-          "runs_scored": 739.0,
-          "runs_allowed": 601.0,
-          "bullpen_ip": 605.4,
-          "bullpen_er": 210.7,
-          "park_factor": 1.03
-        },
-        "starter": {
-          "name": "Gerrit Cole",
-          "ip": 127.0,
-          "hr": 22,
-          "bb": 25,
-          "hbp": 2,
-          "so": 131
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Tampa Bay",
-          "abbr": "TBR",
-          "wins": 98,
-          "losses": 64,
-          "games": 162,
-          "runs_scored": 736.0,
-          "runs_allowed": 650.0,
-          "bullpen_ip": 606.1,
-          "bullpen_er": 241.7,
-          "park_factor": 0.97
-        },
-        "starter": {
-          "name": "Drew Rasmussen",
-          "ip": 172.0,
-          "hr": 14,
-          "bb": 32,
-          "hbp": 7,
-          "so": 174
-        }
-      }
-    },
-    {
-      "time": "SAT 10/03 8:30 PM",
-      "code": "SDP @ MIL",
-      "away": {
-        "team": {
-          "name": "San Diego",
-          "abbr": "SDP",
-          "wins": 91,
-          "losses": 71,
-          "games": 162,
-          "runs_scored": 722.0,
-          "runs_allowed": 681.0,
-          "bullpen_ip": 603.3,
-          "bullpen_er": 259.4,
-          "park_factor": 0.95
-        },
-        "starter": {
-          "name": "Robbie Ray",
-          "ip": 165.7,
-          "hr": 22,
-          "bb": 84,
-          "hbp": 2,
-          "so": 140
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Milwaukee",
-          "abbr": "MIL",
-          "wins": 103,
-          "losses": 59,
-          "games": 162,
-          "runs_scored": 832.0,
-          "runs_allowed": 618.0,
-          "bullpen_ip": 607.6,
-          "bullpen_er": 229.9,
-          "park_factor": 1.0
-        },
-        "starter": {
-          "name": "Jacob Misiorowski",
-          "ip": 174.7,
-          "hr": 14,
-          "bb": 44,
-          "hbp": 9,
-          "so": 252
+          "name": "Blake Snell",
+          "ip": 42.7,
+          "hr": 0,
+          "bb": 16,
+          "hbp": 1,
+          "so": 55
         }
       }
     }

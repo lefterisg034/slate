@@ -1,101 +1,101 @@
 {
-  "date": "2026-10-04",
+  "date": "2026-10-05",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "SUN 10/04 4:00 PM",
-      "code": "SDP @ MIL",
+      "time": "MON 10/05 5:00 PM",
+      "code": "CHW @ CLE",
       "away": {
         "team": {
-          "name": "San Diego",
-          "abbr": "SDP",
-          "wins": 91,
-          "losses": 71,
+          "name": "Chicago",
+          "abbr": "CHW",
+          "wins": 84,
+          "losses": 78,
           "games": 162,
-          "runs_scored": 722.0,
-          "runs_allowed": 681.0,
-          "bullpen_ip": 603.3,
-          "bullpen_er": 259.4,
-          "park_factor": 0.95
+          "runs_scored": 776.0,
+          "runs_allowed": 720.0,
+          "bullpen_ip": 605.1,
+          "bullpen_er": 268.7,
+          "park_factor": 1.02
         },
         "starter": {
-          "name": "Michael King",
-          "ip": 185.0,
-          "hr": 20,
-          "bb": 70,
-          "hbp": 13,
-          "so": 159
+          "name": "Anthony Kay",
+          "ip": 158.0,
+          "hr": 21,
+          "bb": 56,
+          "hbp": 26,
+          "so": 129
         }
       },
       "home": {
         "team": {
-          "name": "Milwaukee",
-          "abbr": "MIL",
-          "wins": 103,
-          "losses": 59,
+          "name": "Cleveland",
+          "abbr": "CLE",
+          "wins": 85,
+          "losses": 77,
           "games": 162,
-          "runs_scored": 832.0,
-          "runs_allowed": 618.0,
-          "bullpen_ip": 607.6,
-          "bullpen_er": 229.9,
-          "park_factor": 1.0
+          "runs_scored": 678.0,
+          "runs_allowed": 667.0,
+          "bullpen_ip": 603.8,
+          "bullpen_er": 245.3,
+          "park_factor": 0.98
         },
         "starter": {
-          "name": "Logan Henderson",
-          "ip": 98.3,
-          "hr": 14,
-          "bb": 19,
-          "hbp": 1,
-          "so": 110
+          "name": "Gavin Williams",
+          "ip": 184.3,
+          "hr": 28,
+          "bb": 61,
+          "hbp": 6,
+          "so": 248
         }
       }
     },
     {
-      "time": "SUN 10/04 8:00 PM",
-      "code": "ATL @ LAD",
+      "time": "MON 10/05 8:00 PM",
+      "code": "NYY @ TBR",
       "away": {
         "team": {
-          "name": "Atlanta",
-          "abbr": "ATL",
-          "wins": 94,
+          "name": "New York",
+          "abbr": "NYY",
+          "wins": 93,
           "losses": 68,
-          "games": 162,
-          "runs_scored": 742.0,
-          "runs_allowed": 626.0,
-          "bullpen_ip": 604.0,
-          "bullpen_er": 236.3,
-          "park_factor": 1.0
+          "games": 161,
+          "runs_scored": 739.0,
+          "runs_allowed": 601.0,
+          "bullpen_ip": 605.4,
+          "bullpen_er": 210.7,
+          "park_factor": 1.03
         },
         "starter": {
-          "name": "TBD",
-          "ip": 0.0,
-          "hr": 0,
-          "bb": 0,
-          "hbp": 0,
-          "so": 0
+          "name": "Cam Schlittler",
+          "ip": 193.7,
+          "hr": 16,
+          "bb": 49,
+          "hbp": 6,
+          "so": 239
         }
       },
       "home": {
         "team": {
-          "name": "Los Angeles",
-          "abbr": "LAD",
-          "wins": 100,
-          "losses": 62,
+          "name": "Tampa Bay",
+          "abbr": "TBR",
+          "wins": 98,
+          "losses": 64,
           "games": 162,
-          "runs_scored": 801.0,
-          "runs_allowed": 600.0,
-          "bullpen_ip": 603.0,
-          "bullpen_er": 230.7,
-          "park_factor": 1.0
+          "runs_scored": 736.0,
+          "runs_allowed": 650.0,
+          "bullpen_ip": 606.1,
+          "bullpen_er": 241.7,
+          "park_factor": 0.97
         },
         "starter": {
-          "name": "Blake Snell",
-          "ip": 42.7,
-          "hr": 0,
-          "bb": 16,
-          "hbp": 1,
-          "so": 55
+          "name": "Freddy Peralta",
+          "ip": 169.0,
+          "hr": 23,
+          "bb": 63,
+          "hbp": 8,
+          "so": 156
         }
       }
     }

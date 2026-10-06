@@ -1,101 +1,101 @@
 {
-  "date": "2026-10-05",
+  "date": "2026-10-06",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "MON 10/05 5:00 PM",
-      "code": "CHW @ CLE",
+      "time": "TUE 10/06 6:00 PM",
+      "code": "LAD @ ATL",
       "away": {
         "team": {
-          "name": "Chicago",
-          "abbr": "CHW",
-          "wins": 84,
-          "losses": 78,
+          "name": "Los Angeles",
+          "abbr": "LAD",
+          "wins": 100,
+          "losses": 62,
           "games": 162,
-          "runs_scored": 776.0,
-          "runs_allowed": 720.0,
-          "bullpen_ip": 605.1,
-          "bullpen_er": 268.7,
-          "park_factor": 1.02
+          "runs_scored": 801.0,
+          "runs_allowed": 600.0,
+          "bullpen_ip": 603.0,
+          "bullpen_er": 230.7,
+          "park_factor": 1.0
         },
         "starter": {
-          "name": "Anthony Kay",
-          "ip": 158.0,
-          "hr": 21,
-          "bb": 56,
-          "hbp": 26,
-          "so": 129
+          "name": "Yoshinobu Yamamoto",
+          "ip": 185.0,
+          "hr": 20,
+          "bb": 42,
+          "hbp": 7,
+          "so": 182
         }
       },
       "home": {
         "team": {
-          "name": "Cleveland",
-          "abbr": "CLE",
-          "wins": 85,
-          "losses": 77,
+          "name": "Atlanta",
+          "abbr": "ATL",
+          "wins": 94,
+          "losses": 68,
           "games": 162,
-          "runs_scored": 678.0,
-          "runs_allowed": 667.0,
-          "bullpen_ip": 603.8,
-          "bullpen_er": 245.3,
-          "park_factor": 0.98
+          "runs_scored": 742.0,
+          "runs_allowed": 626.0,
+          "bullpen_ip": 604.0,
+          "bullpen_er": 236.3,
+          "park_factor": 1.0
         },
         "starter": {
-          "name": "Gavin Williams",
-          "ip": 184.3,
-          "hr": 28,
-          "bb": 61,
-          "hbp": 6,
-          "so": 248
+          "name": "Chris Sale",
+          "ip": 162.7,
+          "hr": 10,
+          "bb": 31,
+          "hbp": 15,
+          "so": 200
         }
       }
     },
     {
-      "time": "MON 10/05 8:00 PM",
-      "code": "NYY @ TBR",
+      "time": "TUE 10/06 9:30 PM",
+      "code": "MIL @ SDP",
       "away": {
         "team": {
-          "name": "New York",
-          "abbr": "NYY",
-          "wins": 93,
-          "losses": 68,
-          "games": 161,
-          "runs_scored": 739.0,
-          "runs_allowed": 601.0,
-          "bullpen_ip": 605.4,
-          "bullpen_er": 210.7,
-          "park_factor": 1.03
+          "name": "Milwaukee",
+          "abbr": "MIL",
+          "wins": 103,
+          "losses": 59,
+          "games": 162,
+          "runs_scored": 832.0,
+          "runs_allowed": 618.0,
+          "bullpen_ip": 607.6,
+          "bullpen_er": 229.9,
+          "park_factor": 1.0
         },
         "starter": {
-          "name": "Cam Schlittler",
-          "ip": 193.7,
-          "hr": 16,
-          "bb": 49,
-          "hbp": 6,
-          "so": 239
+          "name": "Dustin May",
+          "ip": 145.7,
+          "hr": 14,
+          "bb": 50,
+          "hbp": 11,
+          "so": 144
         }
       },
       "home": {
         "team": {
-          "name": "Tampa Bay",
-          "abbr": "TBR",
-          "wins": 98,
-          "losses": 64,
+          "name": "San Diego",
+          "abbr": "SDP",
+          "wins": 91,
+          "losses": 71,
           "games": 162,
-          "runs_scored": 736.0,
-          "runs_allowed": 650.0,
-          "bullpen_ip": 606.1,
-          "bullpen_er": 241.7,
-          "park_factor": 0.97
+          "runs_scored": 722.0,
+          "runs_allowed": 681.0,
+          "bullpen_ip": 603.3,
+          "bullpen_er": 259.4,
+          "park_factor": 0.95
         },
         "starter": {
-          "name": "Freddy Peralta",
-          "ip": 169.0,
-          "hr": 23,
-          "bb": 63,
-          "hbp": 8,
-          "so": 156
+          "name": "Nick Pivetta",
+          "ip": 34.7,
+          "hr": 2,
+          "bb": 8,
+          "hbp": 1,
+          "so": 42
         }
       }
     }

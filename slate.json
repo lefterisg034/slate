@@ -1,10 +1,58 @@
 {
-  "date": "2026-10-06",
+  "date": "2026-10-07",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "TUE 10/06 6:00 PM",
+      "time": "WED 10/07 4:00 PM",
+      "code": "CLE @ CHW",
+      "away": {
+        "team": {
+          "name": "Cleveland",
+          "abbr": "CLE",
+          "wins": 85,
+          "losses": 77,
+          "games": 162,
+          "runs_scored": 678.0,
+          "runs_allowed": 667.0,
+          "bullpen_ip": 603.8,
+          "bullpen_er": 245.3,
+          "park_factor": 0.98
+        },
+        "starter": {
+          "name": "Daniel Espino",
+          "ip": 15.3,
+          "hr": 3,
+          "bb": 7,
+          "hbp": 0,
+          "so": 25
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Chicago",
+          "abbr": "CHW",
+          "wins": 84,
+          "losses": 78,
+          "games": 162,
+          "runs_scored": 776.0,
+          "runs_allowed": 720.0,
+          "bullpen_ip": 605.1,
+          "bullpen_er": 268.7,
+          "park_factor": 1.02
+        },
+        "starter": {
+          "name": "Sean Newcomb",
+          "ip": 90.3,
+          "hr": 4,
+          "bb": 34,
+          "hbp": 8,
+          "so": 84
+        }
+      }
+    },
+    {
+      "time": "WED 10/07 6:00 PM",
       "code": "LAD @ ATL",
       "away": {
         "team": {
@@ -20,12 +68,12 @@
           "park_factor": 1.0
         },
         "starter": {
-          "name": "Yoshinobu Yamamoto",
-          "ip": 185.0,
-          "hr": 20,
-          "bb": 42,
-          "hbp": 7,
-          "so": 182
+          "name": "Tyler Glasnow",
+          "ip": 74.0,
+          "hr": 7,
+          "bb": 25,
+          "hbp": 1,
+          "so": 98
         }
       },
       "home": {
@@ -42,17 +90,65 @@
           "park_factor": 1.0
         },
         "starter": {
-          "name": "Chris Sale",
-          "ip": 162.7,
-          "hr": 10,
-          "bb": 31,
-          "hbp": 15,
-          "so": 200
+          "name": "Tyler Mahle",
+          "ip": 149.0,
+          "hr": 20,
+          "bb": 46,
+          "hbp": 3,
+          "so": 137
         }
       }
     },
     {
-      "time": "TUE 10/06 9:30 PM",
+      "time": "WED 10/07 8:00 PM",
+      "code": "TBR @ NYY",
+      "away": {
+        "team": {
+          "name": "Tampa Bay",
+          "abbr": "TBR",
+          "wins": 98,
+          "losses": 64,
+          "games": 162,
+          "runs_scored": 736.0,
+          "runs_allowed": 650.0,
+          "bullpen_ip": 606.1,
+          "bullpen_er": 241.7,
+          "park_factor": 0.97
+        },
+        "starter": {
+          "name": "Nick Martinez",
+          "ip": 180.0,
+          "hr": 22,
+          "bb": 26,
+          "hbp": 3,
+          "so": 109
+        }
+      },
+      "home": {
+        "team": {
+          "name": "New York",
+          "abbr": "NYY",
+          "wins": 93,
+          "losses": 68,
+          "games": 161,
+          "runs_scored": 739.0,
+          "runs_allowed": 601.0,
+          "bullpen_ip": 605.4,
+          "bullpen_er": 210.7,
+          "park_factor": 1.03
+        },
+        "starter": {
+          "name": "Max Fried",
+          "ip": 112.7,
+          "hr": 4,
+          "bb": 33,
+          "hbp": 2,
+          "so": 104
+        }
+      }
+    },
+    {
+      "time": "WED 10/07 10:00 PM",
       "code": "MIL @ SDP",
       "away": {
         "team": {
@@ -68,12 +164,12 @@
           "park_factor": 1.0
         },
         "starter": {
-          "name": "Dustin May",
-          "ip": 145.7,
-          "hr": 14,
-          "bb": 50,
-          "hbp": 11,
-          "so": 144
+          "name": "TBD",
+          "ip": 0.0,
+          "hr": 0,
+          "bb": 0,
+          "hbp": 0,
+          "so": 0
         }
       },
       "home": {
@@ -90,12 +186,12 @@
           "park_factor": 0.95
         },
         "starter": {
-          "name": "Nick Pivetta",
-          "ip": 34.7,
-          "hr": 2,
-          "bb": 8,
-          "hbp": 1,
-          "so": 42
+          "name": "Walker Buehler",
+          "ip": 153.7,
+          "hr": 22,
+          "bb": 57,
+          "hbp": 7,
+          "so": 131
         }
       }
     }

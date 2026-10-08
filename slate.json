@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-07",
+  "date": "2026-10-08",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "WED 10/07 4:00 PM",
+      "time": "THU 10/08 8:00 PM",
       "code": "CLE @ CHW",
       "away": {
         "team": {
@@ -20,12 +20,12 @@
           "park_factor": 0.98
         },
         "starter": {
-          "name": "Daniel Espino",
-          "ip": 15.3,
-          "hr": 3,
-          "bb": 7,
-          "hbp": 0,
-          "so": 25
+          "name": "Parker Messick",
+          "ip": 186.3,
+          "hr": 17,
+          "bb": 49,
+          "hbp": 4,
+          "so": 193
         }
       },
       "home": {
@@ -42,156 +42,12 @@
           "park_factor": 1.02
         },
         "starter": {
-          "name": "Sean Newcomb",
-          "ip": 90.3,
-          "hr": 4,
-          "bb": 34,
-          "hbp": 8,
-          "so": 84
-        }
-      }
-    },
-    {
-      "time": "WED 10/07 6:00 PM",
-      "code": "LAD @ ATL",
-      "away": {
-        "team": {
-          "name": "Los Angeles",
-          "abbr": "LAD",
-          "wins": 100,
-          "losses": 62,
-          "games": 162,
-          "runs_scored": 801.0,
-          "runs_allowed": 600.0,
-          "bullpen_ip": 603.0,
-          "bullpen_er": 230.7,
-          "park_factor": 1.0
-        },
-        "starter": {
-          "name": "Tyler Glasnow",
-          "ip": 74.0,
-          "hr": 7,
-          "bb": 25,
-          "hbp": 1,
-          "so": 98
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Atlanta",
-          "abbr": "ATL",
-          "wins": 94,
-          "losses": 68,
-          "games": 162,
-          "runs_scored": 742.0,
-          "runs_allowed": 626.0,
-          "bullpen_ip": 604.0,
-          "bullpen_er": 236.3,
-          "park_factor": 1.0
-        },
-        "starter": {
-          "name": "Tyler Mahle",
-          "ip": 149.0,
-          "hr": 20,
-          "bb": 46,
-          "hbp": 3,
-          "so": 137
-        }
-      }
-    },
-    {
-      "time": "WED 10/07 8:00 PM",
-      "code": "TBR @ NYY",
-      "away": {
-        "team": {
-          "name": "Tampa Bay",
-          "abbr": "TBR",
-          "wins": 98,
-          "losses": 64,
-          "games": 162,
-          "runs_scored": 736.0,
-          "runs_allowed": 650.0,
-          "bullpen_ip": 606.1,
-          "bullpen_er": 241.7,
-          "park_factor": 0.97
-        },
-        "starter": {
-          "name": "Nick Martinez",
-          "ip": 180.0,
-          "hr": 22,
-          "bb": 26,
-          "hbp": 3,
-          "so": 109
-        }
-      },
-      "home": {
-        "team": {
-          "name": "New York",
-          "abbr": "NYY",
-          "wins": 93,
-          "losses": 68,
-          "games": 161,
-          "runs_scored": 739.0,
-          "runs_allowed": 601.0,
-          "bullpen_ip": 605.4,
-          "bullpen_er": 210.7,
-          "park_factor": 1.03
-        },
-        "starter": {
-          "name": "Max Fried",
-          "ip": 112.7,
-          "hr": 4,
-          "bb": 33,
-          "hbp": 2,
-          "so": 104
-        }
-      }
-    },
-    {
-      "time": "WED 10/07 10:00 PM",
-      "code": "MIL @ SDP",
-      "away": {
-        "team": {
-          "name": "Milwaukee",
-          "abbr": "MIL",
-          "wins": 103,
-          "losses": 59,
-          "games": 162,
-          "runs_scored": 832.0,
-          "runs_allowed": 618.0,
-          "bullpen_ip": 607.6,
-          "bullpen_er": 229.9,
-          "park_factor": 1.0
-        },
-        "starter": {
-          "name": "TBD",
-          "ip": 0.0,
-          "hr": 0,
-          "bb": 0,
+          "name": "Hagen Smith",
+          "ip": 28.0,
+          "hr": 1,
+          "bb": 16,
           "hbp": 0,
-          "so": 0
-        }
-      },
-      "home": {
-        "team": {
-          "name": "San Diego",
-          "abbr": "SDP",
-          "wins": 91,
-          "losses": 71,
-          "games": 162,
-          "runs_scored": 722.0,
-          "runs_allowed": 681.0,
-          "bullpen_ip": 603.3,
-          "bullpen_er": 259.4,
-          "park_factor": 0.95
-        },
-        "starter": {
-          "name": "Walker Buehler",
-          "ip": 153.7,
-          "hr": 22,
-          "bb": 57,
-          "hbp": 7,
-          "so": 131
+          "so": 41
         }
       }
     }

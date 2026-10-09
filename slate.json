@@ -1,55 +1,5 @@
 {
-  "date": "2026-10-08",
-  "source": "statsapi.mlb.com + the-odds-api.com",
-  "has_odds": false,
-  "games": [
-    {
-      "time": "THU 10/08 8:00 PM",
-      "code": "CLE @ CHW",
-      "away": {
-        "team": {
-          "name": "Cleveland",
-          "abbr": "CLE",
-          "wins": 85,
-          "losses": 77,
-          "games": 162,
-          "runs_scored": 678.0,
-          "runs_allowed": 667.0,
-          "bullpen_ip": 603.8,
-          "bullpen_er": 245.3,
-          "park_factor": 0.98
-        },
-        "starter": {
-          "name": "Parker Messick",
-          "ip": 186.3,
-          "hr": 17,
-          "bb": 49,
-          "hbp": 4,
-          "so": 193
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Chicago",
-          "abbr": "CHW",
-          "wins": 84,
-          "losses": 78,
-          "games": 162,
-          "runs_scored": 776.0,
-          "runs_allowed": 720.0,
-          "bullpen_ip": 605.1,
-          "bullpen_er": 268.7,
-          "park_factor": 1.02
-        },
-        "starter": {
-          "name": "Hagen Smith",
-          "ip": 28.0,
-          "hr": 1,
-          "bb": 16,
-          "hbp": 0,
-          "so": 41
-        }
-      }
-    }
-  ]
+  "date": "2026-10-09",
+  "source": "statsapi.mlb.com",
+  "games": []
 }

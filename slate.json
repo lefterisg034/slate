@@ -1,5 +1,55 @@
 {
-  "date": "2026-10-09",
-  "source": "statsapi.mlb.com",
-  "games": []
+  "date": "2026-10-10",
+  "source": "statsapi.mlb.com + the-odds-api.com",
+  "has_odds": false,
+  "games": [
+    {
+      "time": "SAT 10/10 8:00 PM",
+      "code": "CHW @ CLE",
+      "away": {
+        "team": {
+          "name": "Chicago",
+          "abbr": "CHW",
+          "wins": 84,
+          "losses": 78,
+          "games": 162,
+          "runs_scored": 776.0,
+          "runs_allowed": 720.0,
+          "bullpen_ip": 605.1,
+          "bullpen_er": 268.7,
+          "park_factor": 1.02
+        },
+        "starter": {
+          "name": "Sean Burke",
+          "ip": 172.3,
+          "hr": 19,
+          "bb": 62,
+          "hbp": 9,
+          "so": 185
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Cleveland",
+          "abbr": "CLE",
+          "wins": 85,
+          "losses": 77,
+          "games": 162,
+          "runs_scored": 678.0,
+          "runs_allowed": 667.0,
+          "bullpen_ip": 603.8,
+          "bullpen_er": 245.3,
+          "park_factor": 0.98
+        },
+        "starter": {
+          "name": "Gavin Williams",
+          "ip": 184.3,
+          "hr": 28,
+          "bb": 61,
+          "hbp": 6,
+          "so": 248
+        }
+      }
+    }
+  ]
 }

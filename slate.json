@@ -1,53 +1,53 @@
 {
-  "date": "2026-10-10",
+  "date": "2026-10-11",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "SAT 10/10 8:00 PM",
-      "code": "CHW @ CLE",
+      "time": "SUN 10/11 8:00 PM",
+      "code": "LAD @ MIL",
       "away": {
         "team": {
-          "name": "Chicago",
-          "abbr": "CHW",
-          "wins": 84,
-          "losses": 78,
+          "name": "Los Angeles",
+          "abbr": "LAD",
+          "wins": 100,
+          "losses": 62,
           "games": 162,
-          "runs_scored": 776.0,
-          "runs_allowed": 720.0,
-          "bullpen_ip": 605.1,
-          "bullpen_er": 268.7,
-          "park_factor": 1.02
+          "runs_scored": 801.0,
+          "runs_allowed": 600.0,
+          "bullpen_ip": 603.0,
+          "bullpen_er": 230.7,
+          "park_factor": 1.0
         },
         "starter": {
-          "name": "Sean Burke",
-          "ip": 172.3,
-          "hr": 19,
-          "bb": 62,
-          "hbp": 9,
-          "so": 185
+          "name": "Tarik Skubal",
+          "ip": 158.7,
+          "hr": 14,
+          "bb": 27,
+          "hbp": 5,
+          "so": 186
         }
       },
       "home": {
         "team": {
-          "name": "Cleveland",
-          "abbr": "CLE",
-          "wins": 85,
-          "losses": 77,
+          "name": "Milwaukee",
+          "abbr": "MIL",
+          "wins": 103,
+          "losses": 59,
           "games": 162,
-          "runs_scored": 678.0,
-          "runs_allowed": 667.0,
-          "bullpen_ip": 603.8,
-          "bullpen_er": 245.3,
-          "park_factor": 0.98
+          "runs_scored": 832.0,
+          "runs_allowed": 618.0,
+          "bullpen_ip": 607.6,
+          "bullpen_er": 229.9,
+          "park_factor": 1.0
         },
         "starter": {
-          "name": "Gavin Williams",
-          "ip": 184.3,
-          "hr": 28,
-          "bb": 61,
-          "hbp": 6,
-          "so": 248
+          "name": "Jacob Misiorowski",
+          "ip": 174.7,
+          "hr": 14,
+          "bb": 44,
+          "hbp": 9,
+          "so": 252
         }
       }
     }

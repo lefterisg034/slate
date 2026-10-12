@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-11",
+  "date": "2026-10-12",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "SUN 10/11 8:00 PM",
+      "time": "MON 10/12 5:00 PM",
       "code": "LAD @ MIL",
       "away": {
         "team": {
@@ -20,12 +20,12 @@
           "park_factor": 1.0
         },
         "starter": {
-          "name": "Tarik Skubal",
-          "ip": 158.7,
-          "hr": 14,
-          "bb": 27,
-          "hbp": 5,
-          "so": 186
+          "name": "Yoshinobu Yamamoto",
+          "ip": 185.0,
+          "hr": 20,
+          "bb": 42,
+          "hbp": 7,
+          "so": 182
         }
       },
       "home": {
@@ -42,12 +42,60 @@
           "park_factor": 1.0
         },
         "starter": {
-          "name": "Jacob Misiorowski",
-          "ip": 174.7,
+          "name": "Logan Henderson",
+          "ip": 98.3,
           "hr": 14,
-          "bb": 44,
-          "hbp": 9,
-          "so": 252
+          "bb": 19,
+          "hbp": 1,
+          "so": 110
+        }
+      }
+    },
+    {
+      "time": "MON 10/12 8:00 PM",
+      "code": "CLE @ TBR",
+      "away": {
+        "team": {
+          "name": "Cleveland",
+          "abbr": "CLE",
+          "wins": 85,
+          "losses": 77,
+          "games": 162,
+          "runs_scored": 678.0,
+          "runs_allowed": 667.0,
+          "bullpen_ip": 603.8,
+          "bullpen_er": 245.3,
+          "park_factor": 0.98
+        },
+        "starter": {
+          "name": "Foster Griffin",
+          "ip": 172.7,
+          "hr": 23,
+          "bb": 45,
+          "hbp": 10,
+          "so": 158
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Tampa Bay",
+          "abbr": "TBR",
+          "wins": 98,
+          "losses": 64,
+          "games": 162,
+          "runs_scored": 736.0,
+          "runs_allowed": 650.0,
+          "bullpen_ip": 606.1,
+          "bullpen_er": 241.7,
+          "park_factor": 0.97
+        },
+        "starter": {
+          "name": "Drew Rasmussen",
+          "ip": 172.0,
+          "hr": 14,
+          "bb": 32,
+          "hbp": 7,
+          "so": 174
         }
       }
     }

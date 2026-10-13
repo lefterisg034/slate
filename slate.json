@@ -1,58 +1,10 @@
 {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "MON 10/12 5:00 PM",
-      "code": "LAD @ MIL",
-      "away": {
-        "team": {
-          "name": "Los Angeles",
-          "abbr": "LAD",
-          "wins": 100,
-          "losses": 62,
-          "games": 162,
-          "runs_scored": 801.0,
-          "runs_allowed": 600.0,
-          "bullpen_ip": 603.0,
-          "bullpen_er": 230.7,
-          "park_factor": 1.0
-        },
-        "starter": {
-          "name": "Yoshinobu Yamamoto",
-          "ip": 185.0,
-          "hr": 20,
-          "bb": 42,
-          "hbp": 7,
-          "so": 182
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Milwaukee",
-          "abbr": "MIL",
-          "wins": 103,
-          "losses": 59,
-          "games": 162,
-          "runs_scored": 832.0,
-          "runs_allowed": 618.0,
-          "bullpen_ip": 607.6,
-          "bullpen_er": 229.9,
-          "park_factor": 1.0
-        },
-        "starter": {
-          "name": "Logan Henderson",
-          "ip": 98.3,
-          "hr": 14,
-          "bb": 19,
-          "hbp": 1,
-          "so": 110
-        }
-      }
-    },
-    {
-      "time": "MON 10/12 8:00 PM",
+      "time": "TUE 10/13 8:00 PM",
       "code": "CLE @ TBR",
       "away": {
         "team": {
@@ -68,12 +20,12 @@
           "park_factor": 0.98
         },
         "starter": {
-          "name": "Foster Griffin",
-          "ip": 172.7,
-          "hr": 23,
-          "bb": 45,
-          "hbp": 10,
-          "so": 158
+          "name": "Parker Messick",
+          "ip": 186.3,
+          "hr": 17,
+          "bb": 49,
+          "hbp": 4,
+          "so": 193
         }
       },
       "home": {
@@ -90,12 +42,12 @@
           "park_factor": 0.97
         },
         "starter": {
-          "name": "Drew Rasmussen",
-          "ip": 172.0,
-          "hr": 14,
-          "bb": 32,
-          "hbp": 7,
-          "so": 174
+          "name": "Freddy Peralta",
+          "ip": 169.0,
+          "hr": 23,
+          "bb": 63,
+          "hbp": 8,
+          "so": 156
         }
       }
     }

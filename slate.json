@@ -1,53 +1,53 @@
 {
-  "date": "2026-10-13",
+  "date": "2026-10-14",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "TUE 10/13 8:00 PM",
-      "code": "CLE @ TBR",
+      "time": "WED 10/14 8:00 PM",
+      "code": "MIL @ LAD",
       "away": {
         "team": {
-          "name": "Cleveland",
-          "abbr": "CLE",
-          "wins": 85,
-          "losses": 77,
+          "name": "Milwaukee",
+          "abbr": "MIL",
+          "wins": 103,
+          "losses": 59,
           "games": 162,
-          "runs_scored": 678.0,
-          "runs_allowed": 667.0,
-          "bullpen_ip": 603.8,
-          "bullpen_er": 245.3,
-          "park_factor": 0.98
+          "runs_scored": 832.0,
+          "runs_allowed": 618.0,
+          "bullpen_ip": 607.6,
+          "bullpen_er": 229.9,
+          "park_factor": 1.0
         },
         "starter": {
-          "name": "Parker Messick",
-          "ip": 186.3,
-          "hr": 17,
-          "bb": 49,
-          "hbp": 4,
-          "so": 193
+          "name": "Robert Gasser",
+          "ip": 109.3,
+          "hr": 15,
+          "bb": 35,
+          "hbp": 10,
+          "so": 103
         }
       },
       "home": {
         "team": {
-          "name": "Tampa Bay",
-          "abbr": "TBR",
-          "wins": 98,
-          "losses": 64,
+          "name": "Los Angeles",
+          "abbr": "LAD",
+          "wins": 100,
+          "losses": 62,
           "games": 162,
-          "runs_scored": 736.0,
-          "runs_allowed": 650.0,
-          "bullpen_ip": 606.1,
-          "bullpen_er": 241.7,
-          "park_factor": 0.97
+          "runs_scored": 801.0,
+          "runs_allowed": 600.0,
+          "bullpen_ip": 603.0,
+          "bullpen_er": 230.7,
+          "park_factor": 1.0
         },
         "starter": {
-          "name": "Freddy Peralta",
-          "ip": 169.0,
-          "hr": 23,
-          "bb": 63,
-          "hbp": 8,
-          "so": 156
+          "name": "Blake Snell",
+          "ip": 42.7,
+          "hr": 0,
+          "bb": 16,
+          "hbp": 1,
+          "so": 55
         }
       }
     }

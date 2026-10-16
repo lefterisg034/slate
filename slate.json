@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-10-16",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "THU 10/15 1:00 PM",
+      "time": "FRI 10/16 8:00 PM",
       "code": "TBR @ CLE",
       "away": {
         "team": {
@@ -20,12 +20,12 @@
           "park_factor": 0.97
         },
         "starter": {
-          "name": "Griffin Jax",
-          "ip": 112.3,
-          "hr": 15,
-          "bb": 35,
-          "hbp": 2,
-          "so": 116
+          "name": "Nick Martinez",
+          "ip": 180.0,
+          "hr": 22,
+          "bb": 26,
+          "hbp": 3,
+          "so": 109
         }
       },
       "home": {
@@ -42,60 +42,12 @@
           "park_factor": 0.98
         },
         "starter": {
-          "name": "Gavin Williams",
-          "ip": 184.3,
-          "hr": 28,
-          "bb": 61,
-          "hbp": 6,
-          "so": 248
-        }
-      }
-    },
-    {
-      "time": "THU 10/15 8:00 PM",
-      "code": "MIL @ LAD",
-      "away": {
-        "team": {
-          "name": "Milwaukee",
-          "abbr": "MIL",
-          "wins": 103,
-          "losses": 59,
-          "games": 162,
-          "runs_scored": 832.0,
-          "runs_allowed": 618.0,
-          "bullpen_ip": 607.6,
-          "bullpen_er": 229.9,
-          "park_factor": 1.0
-        },
-        "starter": {
-          "name": "TBD",
-          "ip": 0.0,
-          "hr": 0,
-          "bb": 0,
-          "hbp": 0,
-          "so": 0
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Los Angeles",
-          "abbr": "LAD",
-          "wins": 100,
-          "losses": 62,
-          "games": 162,
-          "runs_scored": 801.0,
-          "runs_allowed": 600.0,
-          "bullpen_ip": 603.0,
-          "bullpen_er": 230.7,
-          "park_factor": 1.0
-        },
-        "starter": {
-          "name": "Tyler Glasnow",
-          "ip": 74.0,
-          "hr": 7,
-          "bb": 25,
-          "hbp": 1,
-          "so": 98
+          "name": "Shawn Armstrong",
+          "ip": 35.3,
+          "hr": 4,
+          "bb": 19,
+          "hbp": 2,
+          "so": 34
         }
       }
     }

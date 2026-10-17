@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "FRI 10/16 8:00 PM",
+      "time": "SAT 10/17 8:08 PM",
       "code": "TBR @ CLE",
       "away": {
         "team": {

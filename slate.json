@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-17",
+  "date": "2026-10-18",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "SAT 10/17 8:08 PM",
+      "time": "SUN 10/18 5:08 PM",
       "code": "TBR @ CLE",
       "away": {
         "team": {
@@ -20,12 +20,12 @@
           "park_factor": 0.97
         },
         "starter": {
-          "name": "Nick Martinez",
-          "ip": 180.0,
-          "hr": 22,
-          "bb": 26,
-          "hbp": 3,
-          "so": 109
+          "name": "Drew Rasmussen",
+          "ip": 172.0,
+          "hr": 14,
+          "bb": 32,
+          "hbp": 7,
+          "so": 174
         }
       },
       "home": {
@@ -42,12 +42,12 @@
           "park_factor": 0.98
         },
         "starter": {
-          "name": "Shawn Armstrong",
-          "ip": 35.3,
-          "hr": 4,
-          "bb": 19,
-          "hbp": 2,
-          "so": 34
+          "name": "Parker Messick",
+          "ip": 186.3,
+          "hr": 17,
+          "bb": 49,
+          "hbp": 4,
+          "so": 193
         }
       }
     }

@@ -1,34 +1,12 @@
 {
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "SUN 10/18 5:08 PM",
-      "code": "TBR @ CLE",
+      "time": "MON 10/19 8:08 PM",
+      "code": "CLE @ TBR",
       "away": {
-        "team": {
-          "name": "Tampa Bay",
-          "abbr": "TBR",
-          "wins": 98,
-          "losses": 64,
-          "games": 162,
-          "runs_scored": 736.0,
-          "runs_allowed": 650.0,
-          "bullpen_ip": 606.1,
-          "bullpen_er": 241.7,
-          "park_factor": 0.97
-        },
-        "starter": {
-          "name": "Drew Rasmussen",
-          "ip": 172.0,
-          "hr": 14,
-          "bb": 32,
-          "hbp": 7,
-          "so": 174
-        }
-      },
-      "home": {
         "team": {
           "name": "Cleveland",
           "abbr": "CLE",
@@ -42,12 +20,34 @@
           "park_factor": 0.98
         },
         "starter": {
-          "name": "Parker Messick",
-          "ip": 186.3,
-          "hr": 17,
-          "bb": 49,
-          "hbp": 4,
-          "so": 193
+          "name": "Shawn Armstrong",
+          "ip": 35.3,
+          "hr": 4,
+          "bb": 19,
+          "hbp": 2,
+          "so": 34
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Tampa Bay",
+          "abbr": "TBR",
+          "wins": 98,
+          "losses": 64,
+          "games": 162,
+          "runs_scored": 736.0,
+          "runs_allowed": 650.0,
+          "bullpen_ip": 606.1,
+          "bullpen_er": 241.7,
+          "park_factor": 0.97
+        },
+        "starter": {
+          "name": "Freddy Peralta",
+          "ip": 169.0,
+          "hr": 23,
+          "bb": 63,
+          "hbp": 8,
+          "so": 156
         }
       }
     }

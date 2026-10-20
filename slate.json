@@ -1,55 +1,5 @@
 {
-  "date": "2026-10-19",
-  "source": "statsapi.mlb.com + the-odds-api.com",
-  "has_odds": false,
-  "games": [
-    {
-      "time": "MON 10/19 8:08 PM",
-      "code": "CLE @ TBR",
-      "away": {
-        "team": {
-          "name": "Cleveland",
-          "abbr": "CLE",
-          "wins": 85,
-          "losses": 77,
-          "games": 162,
-          "runs_scored": 678.0,
-          "runs_allowed": 667.0,
-          "bullpen_ip": 603.8,
-          "bullpen_er": 245.3,
-          "park_factor": 0.98
-        },
-        "starter": {
-          "name": "Shawn Armstrong",
-          "ip": 35.3,
-          "hr": 4,
-          "bb": 19,
-          "hbp": 2,
-          "so": 34
-        }
-      },
-      "home": {
-        "team": {
-          "name": "Tampa Bay",
-          "abbr": "TBR",
-          "wins": 98,
-          "losses": 64,
-          "games": 162,
-          "runs_scored": 736.0,
-          "runs_allowed": 650.0,
-          "bullpen_ip": 606.1,
-          "bullpen_er": 241.7,
-          "park_factor": 0.97
-        },
-        "starter": {
-          "name": "Freddy Peralta",
-          "ip": 169.0,
-          "hr": 23,
-          "bb": 63,
-          "hbp": 8,
-          "so": 156
-        }
-      }
-    }
-  ]
+  "date": "2026-10-20",
+  "source": "statsapi.mlb.com",
+  "games": []
 }

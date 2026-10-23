@@ -1,5 +1,55 @@
 {
-  "date": "2026-10-22",
-  "source": "statsapi.mlb.com",
-  "games": []
+  "date": "2026-10-23",
+  "source": "statsapi.mlb.com + the-odds-api.com",
+  "has_odds": false,
+  "games": [
+    {
+      "time": "FRI 10/23 8:00 PM",
+      "code": "TBR @ MIL",
+      "away": {
+        "team": {
+          "name": "Tampa Bay",
+          "abbr": "TBR",
+          "wins": 98,
+          "losses": 64,
+          "games": 162,
+          "runs_scored": 736.0,
+          "runs_allowed": 650.0,
+          "bullpen_ip": 606.1,
+          "bullpen_er": 241.7,
+          "park_factor": 0.97
+        },
+        "starter": {
+          "name": "Nick Martinez",
+          "ip": 180.0,
+          "hr": 22,
+          "bb": 26,
+          "hbp": 3,
+          "so": 109
+        }
+      },
+      "home": {
+        "team": {
+          "name": "Milwaukee",
+          "abbr": "MIL",
+          "wins": 103,
+          "losses": 59,
+          "games": 162,
+          "runs_scored": 832.0,
+          "runs_allowed": 618.0,
+          "bullpen_ip": 607.6,
+          "bullpen_er": 229.9,
+          "park_factor": 1.0
+        },
+        "starter": {
+          "name": "Jacob Misiorowski",
+          "ip": 174.7,
+          "hr": 14,
+          "bb": 44,
+          "hbp": 9,
+          "so": 252
+        }
+      }
+    }
+  ]
 }

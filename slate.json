@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "FRI 10/23 8:00 PM",
+      "time": "SAT 10/24 8:00 PM",
       "code": "TBR @ MIL",
       "away": {
         "team": {
@@ -20,12 +20,12 @@
           "park_factor": 0.97
         },
         "starter": {
-          "name": "Nick Martinez",
-          "ip": 180.0,
-          "hr": 22,
-          "bb": 26,
-          "hbp": 3,
-          "so": 109
+          "name": "Drew Rasmussen",
+          "ip": 172.0,
+          "hr": 14,
+          "bb": 32,
+          "hbp": 7,
+          "so": 174
         }
       },
       "home": {
@@ -42,12 +42,12 @@
           "park_factor": 1.0
         },
         "starter": {
-          "name": "Jacob Misiorowski",
-          "ip": 174.7,
+          "name": "Logan Henderson",
+          "ip": 98.3,
           "hr": 14,
-          "bb": 44,
-          "hbp": 9,
-          "so": 252
+          "bb": 19,
+          "hbp": 1,
+          "so": 110
         }
       }
     }

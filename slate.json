@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "source": "statsapi.mlb.com + the-odds-api.com",
   "has_odds": false,
   "games": [
     {
-      "time": "TUE 10/27 8:00 PM",
+      "time": "WED 10/28 8:00 PM",
       "code": "MIL @ TBR",
       "away": {
         "team": {
@@ -20,12 +20,12 @@
           "park_factor": 1.0
         },
         "starter": {
-          "name": "TBD",
-          "ip": 0.0,
-          "hr": 0,
-          "bb": 0,
-          "hbp": 0,
-          "so": 0
+          "name": "Jacob Misiorowski",
+          "ip": 174.7,
+          "hr": 14,
+          "bb": 44,
+          "hbp": 9,
+          "so": 252
         }
       },
       "home": {
@@ -42,12 +42,12 @@
           "park_factor": 0.97
         },
         "starter": {
-          "name": "Griffin Jax",
-          "ip": 112.3,
-          "hr": 15,
-          "bb": 35,
-          "hbp": 2,
-          "so": 116
+          "name": "TBD",
+          "ip": 0.0,
+          "hr": 0,
+          "bb": 0,
+          "hbp": 0,
+          "so": 0
         }
       }
     }
